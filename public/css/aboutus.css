@@ -1,0 +1,132 @@
+* {
+    list-style: none;
+    box-sizing: inherit;
+}
+body {
+    background: #ffffff;
+    font-size: 20px;
+    line-height: 1.25;
+    font-weight: 400;
+    font-family: "Jost", sans-serif;
+    text-align: left;
+}
+img {
+    max-width: 100%;
+}
+.section {
+    float: left;
+    width: 100%;
+    display: block;
+}
+.breadcrumb {
+    width: 100%;
+    height: 250px;
+    background-image: url("/image/breadcrumb-bg.jpg");
+    text-align: center;
+    margin: -40px 0 60px;
+    padding: 82px 0;
+    overflow: hidden;
+    background-size: initial;
+}
+.container {
+    float: none;
+    width: 1400px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 100%;
+}
+.breadcrumb-item {
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+}
+.breadcrumb-item li:nth-child(1) {
+    border-right: 1px solid red;
+}
+.breadcrumb-item li:nth-child(2) {
+    padding-left: 15px;
+}
+.breadcrumb-item li:nth-child(1) {
+    padding: 0px 15px 0px 0px;
+}
+.breadcrumb-item li a {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.breadcrumb-item li a:hover {
+    color: red;
+}
+.breadcrumb-item li span {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.breadcrumb h3 {
+    float: none;
+    line-height: 40px;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+    font-weight: 500;
+    margin: 100px 0 8px;
+    text-transform: capitalize;
+    font-size: 34px;
+    border: 0;
+    color: #b9def0;
+}
+.left-top {
+    border: #cccccc solid 2px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.left-top h4 {
+    background-color: #cccccc;
+    padding: 10px;
+    font-weight: bold;
+}
+.left-top h4 a {
+    color: #0f0f0f;
+    text-decoration: none;
+}
+.left-top ul {
+    list-style-type: none;
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+.sub-menu {
+    line-height: 30px;
+}
+.sub-link {
+    color: #adadad;
+    text-decoration: none;
+}
+.sub-menu a:hover {
+    color: red;
+    text-decoration: none;
+}
+.left-middle ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.left-bottom {
+    border: #cccccc solid 2px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.left-bottom h4 {
+    background-color: #cccccc;
+    padding: 10px;
+    font-weight: bold;
+}
+.content ul {
+    list-style-type: none;
+    padding-left: 10px;
+    margin: 0;
+}
+.item-thumbnail {
+    float: left;
+}

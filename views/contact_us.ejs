@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="css/contact.us.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <script src="/index.js"></script>
+    <meta charset="UTF-8">
+    <title>Eyeonic - Radius website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <%- include("stylesheet.ejs") %>
+    <link rel="stylesheet" href="/css/contact_us.css">
 </head>
 <body>
+<%- include("header.ejs") %>
 <section class="section">
     <div class="breadcrumb">
-        <div class="container tdw">
-            <h3>Contact US</h3>
-            <ul class="menu-item">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Contact us</a></li>
-            </ul>
-        </div>
+        <h3>Contact US</h3>
+        <ul class="menu-item">
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact-us">Contact us</a></li>
+        </ul>
     </div>
     <div class="container">
         <div class="comlumns">
             <div class="left-comlums">
-                <h4>Store Information</h4>
+                <h3>Store Information</h3>
                 <div class="nd-left">
                     <div>
                         <div class="icon">
@@ -70,20 +73,21 @@
                                 class="form-control"
                                 name="form"
                                 type="email"
-                                placeholder="your@email.com"
+                                placeholder="Enter your email"
                         />
                     </div>
                     <div class="form-group">
                         <label>Attachment</label>
-                        <div class="inputFile" style="width: 50%"></div>
-                        <input hidden="hidden" />
-                        <div class="upload">
-                            <input type="file" style="hi">
-                            <p>CHOOSE FILE</p>
+                        <div>
+                            <div class="inputFile"></div>
+                            <input type="file" id="file-upload" style="display: none">
+                            <label for="file-upload" style="display: inline-block">
+                                <h4 class="choose-file-btn">Choose file</h4>
+                            </label>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label>Email address</label>
+                        <label>Message</label>
                         <textarea
                                 name=""
                                 id=""
@@ -91,10 +95,13 @@
                         ></textarea>
                     </div>
                 </form>
-                <button class="btn-submit">Send</button>
+                <button class="btn-submit"><h3>Send</h3></button>
             </div>
         </div>
     </div>
 </section>
+<%- include("footer.ejs") %>
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/js_all.js"></script>
 </body>
 </html>

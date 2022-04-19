@@ -2,24 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About Us</title>
-    <link rel= "stylesheet" href="/css/aboutus.css">
+
+
     <%- include("stylesheet.ejs") %>
+    <link rel="stylesheet" href="/css/aboutus.css">
+    <link rel="stylesheet" href="/css/popular_product.css">
 </head>
 <body>
+<%- include("header.ejs") %>
      <section class = "col-md-12">
-         <nav class = "breadcrumb">
-             <div class="container">
-                 <h3>About Us</h3>
-                 <ol class = "breadcrumb-item">
-                     <li><a href="#">Home</a></li>
-                     <li><span>About us</span></li>
-                 </ol>
-             </div>
-         </nav>
+         <div class="breadcrumb">
+             <h3>Contact US</h3>
+             <ul class="menu-item">
+                 <li><a href="/">Home</a></li>
+                 <li><a href="/contact-us">Contact us</a></li>
+             </ul>
+         </div>
          <div class= "container">
              <div class = "left col-md-3">
                  <div class = "left-top">
@@ -200,5 +199,8 @@
              </div>
          </div>
      </section>
+     <%- include("footer.ejs") %>
+     <script type="text/javascript" src="/js/jquery.js"></script>
+     <script type="text/javascript" src="/js/js_all.js"></script>
 </body>
 </html>

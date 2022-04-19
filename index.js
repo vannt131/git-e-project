@@ -27,14 +27,21 @@ app.get("/",function (req,res){
     res.render("home");
 })
 
+app.get("/products",function (req,res){
+    res.render("product");
+})
+
 app.get("/shopping-cart",function (req,res){
     res.render("shopping_cart");
 })
 
+app.get("/about-us",function (req,res){
+    res.render("aboutus");
+})
 app.get("/contact-us",function (req,res){
-    res.render("contact_us");
+    res.render("contactus");
 })
 
-app.get("/payment",function (req,res){
-    res.render("payment");
+app.get("/checkout",function (req,res){
+    res.render("checkout");
 })

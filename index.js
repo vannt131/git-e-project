@@ -23,3 +23,18 @@ app.set("view engine", "ejs");
 // cấp quyền truy cập cho thư mục public
 app.use(express.static("public"));
 
+app.get("/",function (req,res){
+    res.render("home");
+})
+
+app.get("/shopping-cart",function (req,res){
+    res.render("shopping_cart");
+})
+
+app.get("/contact-us",function (req,res){
+    res.render("contact_us");
+})
+
+app.get("/payment",function (req,res){
+    res.render("payment");
+})

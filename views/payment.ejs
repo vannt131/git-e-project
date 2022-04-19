@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping cart</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <%- include("stylesheet.ejs") %>
+    <link rel="stylesheet" href="/css/payment.css">
+</head>
+<body>
+<%- include("header.ejs") %>
+<section class="section">
+    <div class="breadcrumb">
+        <h3>Payment</h3>
+        <ul class="menu-item">
+            <li><a href="/">Home</a></li>
+            <li><a href="/payment">Payment</a></li>
+        </ul>
+    </div>
+    <div class="text-center">
+        <h1>Don hang so 1</h1>
+    </div>
+    <div class="payment">
+        <div class="infor-user col-md-6">
+            <div class="form-group">
+                <label>Full name:</label>
+                <input class="form-control" type="text" placeholder="Full name">
+            </div>
+            <div class="form-group">
+                <label>Telephone:</label>
+                <input class="form-control" type="tel" placeholder="Telephone" required>
+            </div>
+            <div class="form-group">
+                <label>Address:</label>
+                <input class="form-control" type="text" placeholder="Address" required>
+            </div>
+            <div class="form-group">
+                <label>Note:</label>
+                <textarea name="message" id="" class="form-control" placeholder="Note to seller"></textarea>
+            </div>
+        </div>
+        <div class="form-payment col-md-6">
+            <div>
+                <div class="row text-center">
+                    <h4>Select a payment method:</h4>
+                </div>
+                <div class="col-md-4">
+                    <h4>Credit / Debit card</h4>
+                </div>
+                <div class="col-md-4">
+                    <h4>Payment via internet banking</h4>
+                </div>
+                <div class="col-md-4">
+                    <h4>Payment on delivery</h4>
+                </div>
+
+            </div>
+        </div>
+        <div class="order container">
+            <h4>Transport fee: <span>$0</span></h4>
+            <h4>Total: <span>$0</span></h4>
+        </div>
+    </div>
+</section>
+<%- include("footer.ejs") %>
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/js_all.js"></script>
+</body>
+</html>

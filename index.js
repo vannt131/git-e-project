@@ -34,3 +34,7 @@ app.get("/shopping-cart",function (req,res){
 app.get("/contact-us",function (req,res){
     res.render("contact_us");
 })
+
+app.get("/payment",function (req,res){
+    res.render("payment");
+})

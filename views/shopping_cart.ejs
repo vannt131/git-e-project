@@ -10,6 +10,7 @@
 
     <%- include("stylesheet.ejs") %>
     <link rel="stylesheet" href="/css/shopping_cart.css">
+    <link rel="stylesheet" href="/css/popular_product.css">
 </head>
 <body>
 <%- include("header.ejs") %>
@@ -24,16 +25,16 @@
     <div class="shop-cart">
         <div class="product-cart" style="display: block;">
             <div class="title">
-                <div style="width: 600px;padding-left: 200px">
+                <div style="width: 600px;padding-left: 150px">
                     <h4>Product</h4>
                 </div>
-                <div style="padding-left: 230px">
+                <div style="padding-left: 180px">
                     <h4>Price</h4>
                 </div>
                 <div style="padding-left: 140px">
                     <h4>Amount</h4>
                 </div>
-                <div style="padding-left: 120px">
+                <div style="padding-left: 210px">
                     <h4>Operation</h4>
                 </div>
             </div>
@@ -105,7 +106,7 @@
                     <button type="button">Apply</button>
                 </div>
             </div>
-            <div class="payment">
+            <div class="total">
                 <div class="checkbox-btn-all">
                     <label for="select-all"><input type="checkbox" id="select-all"><p>Select all</p></label>
                 </div>
@@ -118,133 +119,13 @@
                         <h4>Total payment(0 product): <span style="color: #ed0f0f">$0</span></h4>
                     </div>
                     <div>
-                        <h3>Checkout</h3>
+                        <h3><a href="/payment">Checkout</a></h3>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="popular-product">
-        <h1 class="text-center" style="margin: 100px 0 100px"><u>Popular Products</u></h1>
-        <div class="products">
-            <div class="col-md-3">
-                <a href=""><img src="https://demo.codezeel.com/prestashop/PRS18/PRS180433/img/p/2/4/24-home_default.jpg" alt=""></a>
-                <div class="star" style="color: yellow" >
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-                <h4><a href="">Roadies Rd-202 Round Protection</a></h4>
-                <h3 style="color: #ed0f0f">$56.12</h3>
-                <div class="outer">
-                    <a href=""><i class="fa fa-heart"></i></a>
-                    <a href=""><i class="fa fa-eye"></i></a>
-                    <a href=""><i class="fa fa-shopping-bag"></i></a>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <a href=""><img src="https://demo.codezeel.com/prestashop/PRS18/PRS180433/img/p/1/2/0/120-home_default.jpg" alt=""></a>
-                <div class="star" style="color: gray" >
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-                <h4><a href="">Hippie carnival glasses orange</a></h4>
-                <h3 style="color: #ed0f0f">$47.00</h3>
-                <div class="outer">
-                    <a href=""><i class="fa fa-heart"></i></a>
-                    <a href=""><i class="fa fa-eye"></i></a>
-                    <a href=""><i class="fa fa-shopping-bag"></i></a>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <a href=""><img src="https://demo.codezeel.com/prestashop/PRS18/PRS180433/img/p/1/0/7/107-home_default.jpg" alt=""></a>
-                <div class="star" style="color: yellow" >
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-                <h4><a href="">Tinted hexagon oversized glass</a></h4>
-                <h3 style="color: #ed0f0f">$63.36</h3>
-                <div class="outer">
-                    <a href=""><i class="fa fa-heart"></i></a>
-                    <a href=""><i class="fa fa-eye"></i></a>
-                    <a href=""><i class="fa fa-shopping-bag"></i></a>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <a href=""><img src="https://demo.codezeel.com/prestashop/PRS18/PRS180433/img/p/1/0/5/105-home_default.jpg" alt=""></a>
-                <div class="star" style="color: gray" >
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-                <h4><a href="">Transparent frame wayfarer lens</a></h4>
-                <h3 style="color: #ed0f0f">$45.00</h3>
-                <div class="outer">
-                    <a href=""><i class="fa fa-heart"></i></a>
-                    <a href=""><i class="fa fa-eye"></i></a>
-                    <a href=""><i class="fa fa-shopping-bag"></i></a>
-                </div>
-            </div><div class="col-md-3">
-                <a href=""><img src="https://demo.codezeel.com/prestashop/PRS18/PRS180433/img/p/1/0/5/105-home_default.jpg" alt=""></a>
-                <div class="star" style="color: gray" >
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-                <h4><a href="">Transparent frame wayfarer lens</a></h4>
-                <h3 style="color: #ed0f0f">$45.00</h3>
-                <div class="outer">
-                    <a href=""><i class="fa fa-heart"></i></a>
-                    <a href=""><i class="fa fa-eye"></i></a>
-                    <a href=""><i class="fa fa-shopping-bag"></i></a>
-                </div>
-            </div><div class="col-md-3">
-                <a href=""><img src="https://demo.codezeel.com/prestashop/PRS18/PRS180433/img/p/1/0/5/105-home_default.jpg" alt=""></a>
-                <div class="star" style="color: gray" >
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-                <h4><a href="">Transparent frame wayfarer lens</a></h4>
-                <h3 style="color: #ed0f0f">$45.00</h3>
-                <div class="outer">
-                    <a href=""><i class="fa fa-heart"></i></a>
-                    <a href=""><i class="fa fa-eye"></i></a>
-                    <a href=""><i class="fa fa-shopping-bag"></i></a>
-                </div>
-            </div><div class="col-md-3">
-                <a href=""><img src="https://demo.codezeel.com/prestashop/PRS18/PRS180433/img/p/1/0/5/105-home_default.jpg" alt=""></a>
-                <div class="star" style="color: gray" >
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-                <h4><a href="">Transparent frame wayfarer lens</a></h4>
-                <h3 style="color: #ed0f0f">$45.00</h3>
-                <div class="outer">
-                    <a href=""><i class="fa fa-heart"></i></a>
-                    <a href=""><i class="fa fa-eye"></i></a>
-                    <a href=""><i class="fa fa-shopping-bag"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <%- include("popular_product.ejs") %>
 </section>
 <%- include("footer.ejs") %>
 <script type="text/javascript" src="/js/jquery.js"></script>

@@ -80,7 +80,9 @@ ul li{
 }
 
 .form-payment .col-md-4 h4{
+    text-align: center;
     padding: 10px;
     color: #ffffff;
     background: #ee4d2d;
 }
+

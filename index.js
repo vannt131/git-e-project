@@ -42,6 +42,10 @@ app.get("/contact-us",function (req,res){
     res.render("contactus");
 })
 
-app.get("/checkout",function (req,res){
+app.get("/check-out",function (req,res){
     res.render("checkout");
+})
+
+app.get("/thank-you",function (req,res){
+    res.render("thank_you");
 })

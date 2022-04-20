@@ -75,58 +75,51 @@ ul li{
     margin-right: auto;
     max-width: 1400px;
     margin-bottom: 100px;
-}
-
-.product-cart{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.6) 0px 1px 2px 0px;
 }
+
 .title{
     color: #ffffff;
-    background: #ee4d2d;
-}
-.title div{
-    display: inline-block;
-    padding: 10px;
+    background: #ed0f0f;
 }
 
 .product{
-    padding: 50px;
     border-bottom: 1px solid #ccc;
 }
 .product .checkbox-btn{
-    display: inline-block;
-    float: left;
-    margin-top: 70px;
-    padding: 5px 10px;
+    padding: 35px 0 0 20px;
 }
 
 .product .product-img{
     display: inline-block;
-    width: 150px;
-    float: left;
-    margin: 0 20px;
+    width: 110px;
+    padding-top: 10px;
 }
 .product a:hover{
     color: #ed0f0f;
     transition: all 300ms ease-in-out;
 }
 .product .product-infor{
-    max-width: 400px;
     display: inline-block;
 }
 .product-infor .star i{
     font-size: 10px;
     margin: 0;
 }
-.product .product-price{
+.product .product-size p{
     display: inline-block;
+}
+.product .product-size section{
+    display: inline-block;
+}
+.product .product-price{
     color: #ed0f0f;
-    margin: 0  50px 0 100px;
+    padding-top: 10px;
 }
 .product .delete{
-    display: inline-block;
-    float: right;
-    margin-top: 60px;
+    font-weight: 900;
+    opacity: 0.8;
+    padding: 30px;
 }
 .delete:hover{
     color: #ed0f0f;
@@ -140,7 +133,7 @@ ul li{
     display:inline-flex;
     white-space:nowrap;
     vertical-align:top;
-    margin: 70px 50px;
+    padding-top: 20px;
 }
 .is-form {
     overflow:hidden;
@@ -156,17 +149,21 @@ ul li{
     outline:none;
 }
 .is-form.minus {
+    color: #ffffff;
+    background: #ed0f0f;
     border-radius:4px 0 0 4px;
     font-size: 30px;
 }.is-form.minus:hover{
-     color: #ed0f0f;
+     background: black;
      transition: all 300ms ease-in-out;
  }
 .is-form.plus {
+    color: #ffffff;
+    background: #ed0f0f;
     border-radius:0 4px 4px 0;
     font-size: 20px;
 }.is-form.plus:hover{
-     color: #ed0f0f;
+     background: black;
      transition: all 300ms ease-in-out;
  }
 .input-qty {
@@ -188,21 +185,34 @@ ul li{
     margin:0;
 }
 
+
+.total-payment{
+    display: flex;
+    float: none;
+    margin: 0 auto 100px auto;
+    max-width: 1400px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.6) 0px 1px 2px 0px;
+    padding: 10px;
+    background: #f9f9f9;
+    z-index: 100;
+    /*position: fixed;*/
+    bottom: -95px;
+}
 .discount{
-    padding: 20px 0  20px 0px;
-    margin-top: 20px;
-    border-bottom: 1px dashed #ccc;
-}
-.discount .adver{
+    width: 50%;
     float: left;
-    padding: 20px 0 0 700px;
 }
-.adver p{
+.discount .adver p{
+    padding: 35px 10px 30px 30px;
+    display: inline-block;
+    float: left;
     color: #ed0f0f;
 }
+
 .discount-content{
     display: inline-block;
-    margin-left: 50px;
+    float: left;
+    margin-top: 20px;
     border: 1px solid #ccc;
 }
 .discount .discount-text{
@@ -215,9 +225,8 @@ ul li{
 .discount button{
     border: none;
     color: #ffffff;
-    background: #ed0f0f;
-    padding: 15px 10px;
-    margin-top: -1px;
+    background: #a6a4a4;
+    padding: 17px 10px;
     margin-right: -1px;
 }
 .discount button:hover{
@@ -226,30 +235,15 @@ ul li{
 }
 
 .total{
-
+    width: 50%;
+    float: left;
 }
 .total div{
     display: inline-block;
 }
-.checkbox-btn-all{
-    margin: 50px 110px;
-}
-.checkbox-btn-all p{
-    display: inline-block;
-    font-size: 15px;
-    font-weight: 400;
-    padding-left: 10px;
-}
-.checkbox-btn-all p:hover{
-    cursor: pointer;
-}
-.checkbox-btn-all:hover{
-    color: #ed0f0f;
-    transition: all 300ms ease-in-out;
-}
 .checkout{
-    float: right;
-    padding: 20px 70px;
+    display: inline-block;
+    padding: 10px 0 0 200px;
 }
 .checkout a{
     color: #ffffff;

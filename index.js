@@ -49,3 +49,17 @@ app.get("/check-out",function (req,res){
 app.get("/thank-you",function (req,res){
     res.render("thank_you");
 })
+
+app.get("/account-log-in",function (req,res){
+    res.render("account_log_in");
+})
+app.get("/account-sign-up",function (req,res){
+    res.render("account_sign_up");
+})
+app.get("/account-forgot-password",function (req,res){
+    res.render("account_forgot_password");
+})
+
+app.get("/wishlist",function (req,res){
+    res.render("wishlist");
+})

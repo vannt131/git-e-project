@@ -65,7 +65,7 @@ img {
     margin-top: 50px;
 }
 .slide .text a:hover p{
-    background-color: black;
+    background-color: #242424;
     transition: all 900ms;
 }
 
@@ -74,7 +74,7 @@ img {
     visibility: visible;
 }
 .nut-slide span{
-    color: black;
+    color: #242424;
     opacity: 0;
 }
 span#btn-prev{
@@ -182,7 +182,7 @@ span#btn-next{
     margin-top: 40px;
 }
 .box a:hover u{
-    color: black;
+    color: #242424;
     text-decoration: none;
 }
 .box .left{
@@ -284,7 +284,7 @@ span#btn-next{
     margin-top: 50px;
 }
 .banner a:hover p{
-    background-color: black;
+    background-color: #242424;
     transition: all 900ms;
 }
 
@@ -352,9 +352,38 @@ span#btn-next{
     max-height: 1000px;
     background-color: #f5f4f2;
 }
+
+.testimonial #testimonial-text{
+    width: 1000px;
+    height: 100px;
+    background: #232323;
+    background-image: -moz-linear-gradient(top,#4a4a4a,#232323);
+    background-image: -o-linear-gradient(top,#4a4a4a,#232323);
+    background-image: -webkit-linear-gradient(top,#4a4a4a,#232323);
+    background-image: linear-gradient(top,#4a4a4a,#232323);
+    color: #ffffff;
+    font-size: 20px;
+    padding: 20px;
+    margin: 0 auto 50px auto;
+    border-radius: 10px;
+    position: relative;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.7);
+}
+.testimonial #testimonial-text:after{
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border: 20px solid transparent;
+    border-top: 20px solid #232323;
+    left: 48%;
+    bottom: -40px;
+}
+
 .testimonial img{
     border-radius: 50%;
     cursor: pointer;
+    transition: all 300ms ease-in-out;
 }
 .testimonial .tes-thubnail{
     padding: 0 20px;

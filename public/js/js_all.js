@@ -1,3 +1,4 @@
+// slide-show
 $(document).ready(function next_slide() {
     $('#btn-next').click(function(event) {
         var slide_sau = $('.active').next();
@@ -56,7 +57,8 @@ setInterval(function (){
             $('.di-vao-ben-phai').removeClass('di-vao-ben-phai');
         });
     }
-},10000);
+},5000);
+
 
 jQuery(document).ready(function($) {
     //selector đến menu cần làm việc
@@ -87,8 +89,7 @@ var active_text2 = document.getElementById("active-text2");
 var active_text3 = document.getElementById("active-text3");
 var active_text4 = document.getElementById("active-text4");
 function testimonial_1 (){
-    ttm.innerText = "Be aggressive with an idea, problem, or mistake that you want to make right." +
-        " If you don't have enough passion from the beginning, you'll never make it to the end.";
+    ttm.innerText = "Be aggressive with an idea, problem, or mistake that you want to make right. If you don't have enough passion from the beginning, you'll never make it to the end.";
 
     active_img1.style.border = "3px solid #ed0f0f"; active_img1.style.transform = "scale(1.2)";
     active_text1.style.color = "#ed0f0f";
@@ -136,11 +137,13 @@ function testimonial_4 (){
     active_text4.style.color = "#ed0f0f";
 }
 
+// back-to-top
 $('.back-to-top').click(function (event){
     $('html,body').animate({
         scrollTop: 0,
     },1500)
 });
+
 
 $('input.input-qty').each(function() {
     var $this = $(this),
@@ -160,3 +163,16 @@ $('input.input-qty').each(function() {
         $this.attr('value', d).val(d)
     })
 })
+
+// show-password
+$(document).ready(function (){
+    $('.eye').click(function (){
+        $(this).toggleClass('open');
+        $(this).children('i').toggleClass('fa fa-eye-slash fa fa-eye');
+        if ($(this).hasClass('open')){
+            $('.show-password').attr('type','text');
+        }else{
+            $('.show-password').attr('type','password');
+        }
+    });
+});

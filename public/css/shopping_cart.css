@@ -154,7 +154,7 @@ ul li{
     border-radius:4px 0 0 4px;
     font-size: 30px;
 }.is-form.minus:hover{
-     background: black;
+     background: #242424;
      transition: all 300ms ease-in-out;
  }
 .is-form.plus {
@@ -196,7 +196,7 @@ ul li{
     background: #f9f9f9;
     z-index: 100;
     /*position: fixed;*/
-    bottom: -95px;
+    /*bottom: -95px;*/
 }
 .discount{
     width: 50%;
@@ -230,7 +230,7 @@ ul li{
     margin-right: -1px;
 }
 .discount button:hover{
-    background: black;
+    background: #242424;
     transition: all 300ms ease-in-out;
 }
 
@@ -252,7 +252,7 @@ ul li{
     margin-left: 20px;
 }
 .checkout a:hover{
-    background: black;
+    background: #242424;
     cursor: pointer;
     transition: all 300ms ease-in-out;
 }

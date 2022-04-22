@@ -12,7 +12,16 @@
     transition: all 300ms ease-in-out;
 }
 
-
+.footer{
+    display: inline-block;
+    width: 100%;
+    background: #232323;
+    background-image: -moz-linear-gradient(bottom,#4a4a4a,#232323);
+    background-image: -o-linear-gradient(bottom,#4a4a4a,#232323);
+    background-image: -webkit-linear-gradient(bottom,#4a4a4a,#232323);
+    background-image: linear-gradient(bottom,#4a4a4a,#232323);
+    padding: 100px 100px 20px;
+}
 .footer .content{
     float: none;
     margin-left: auto;

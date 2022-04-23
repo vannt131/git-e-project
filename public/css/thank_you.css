@@ -43,13 +43,15 @@ a{
 }
 .breadcrumb{
     float: none;
-    background-image: url("https://demo.codezeel.com/prestashop/PRS18/PRS180433/themes/Sumkie/assets/img/codezeel/breadcrumb-bg.jpg");
+    background-image: url("https://pkmacbook.com/wp-content/uploads/2021/07/anh-background-cam-on_095941291.jpg");
     text-align: center;
     max-width: 1600px;
-    margin: 0 auto 150px auto;
+    height: 500px;
+    margin: 0 auto 100px auto;
     padding: 82px 0;
     background-size: initial;
     background-repeat: no-repeat;
+    background-position-y: -200px;
 }
 .breadcrumb h3{
     float: none;
@@ -89,40 +91,43 @@ ul li{
 }
 
 .thank-you {
-    display: flex;
     float: none;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
- }
-.tk_txt{
-    width: 100%;
-    float: none;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 50px 100px 100px;
+    background: #f6e58d;
+    border-radius: 10px;
 }
-.img_txt{
-    width: 50%;
-    height: 400px;
-    background-size: initial;
-    float: left;
-}
-.left_txt p{
+
+.logo-tk h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 100px;
     text-align: center;
-    font-size: 35px;
     color: #ed0f0f;
-    font-weight: 900;
-    line-height: 1.2;
-    text-transform: capitalize;
+    margin-bottom: 50px;
 }
+.text-tk{
+    margin-bottom: 50px;
+}
+.text-tk p{
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: 400;
+}
+
 .gift{
-    float: left;
-    background: #cdff79;
-    width: 30%;
+    float: none;
+    margin: 0 auto;
+    width: 500px;
+    justify-content: center;
     text-align: center;
-    color: #ed0f0f;
-    padding: 20px 10px;
-    margin-left: 123px;
-    margin-top: 50px;
+    padding: 20px;
+    background: #f9f9f9;
 }
+.gift h2{
+    color: #242424;
 
-
+}
+.gift h2:hover{
+    color: #ed0f0f;
+}

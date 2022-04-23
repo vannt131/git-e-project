@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Thank You</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <%- include("stylesheet.ejs") %>
     <link rel="stylesheet" href="/css/thank_you.css">
     <link rel="stylesheet" href="/css/popular_product.css">
@@ -11,30 +12,27 @@
 <body>
 <%- include("header.ejs") %>
 <section class="section">
-    <div class="breadcrumb">
-        <div class="container tdw">
-            <h3>Thanh You</h3>
-            <ul class="menu-item">
-                <li><a href="/">Home</a></li>
-                <li><a href="/thank-you">Thank you</a></li>
-            </ul>
-        </div>
-    </div>
     <div class="thank-you">
-        <div class="tk_txt">
-            <div class="img_txt">
-                <img src="imgs/tks.png" width="500" height="300">
-            </div>
-            <div class="left_txt">
-                <p>Thank you for your purchase !!</p>
-                <div class="gift">
-                    <h3>A Gift For You!</h3>
-                    <h5>10% off your next purchase. Expiry date 1 months</h5>
-                    <a href="#"><h4>Take 10% of now</h4></a>
-                </div>
-            </div>
+        <div class="logo-tk">
+            <h1>Thank you</h1>
+        </div>
+        <div class="text-tk">
+            <p><i>First of all, I would like to say hello to you, thank you for ordering and supporting us a lot! If you are satisfied with our product,
+                    we hope you can take a moment to take a photo or video and share it with your friends. In case there is still something unsatisfied,
+                    please take a video or photo of the package with the product received, then send us the picture and description of your problem.
+                    We are sure to find the most affordable solution for you to have the best in-store shopping experience.
+                    Or you can also contact us via HOTLINE: 999-999-9999 for fastest processing!</i></p>
+            <p><i>Once again, Eyeonic thank you for trusting and choosing us!</i></p>
+            <p><i>Wish you success and good luck in life!</i></p>
+        </div>
+        <div class="gift">
+            <h4>We send you a discount code on your next purchase</h4>
+            <h4>*********</h4>
+            <p>(Expiry date 1 months)</p>
+            <a href="/products"><h2><i class="fa fa-arrow-right"></i>Continue to buy</h2></a>
         </div>
     </div>
+
     <%- include("popular_product.ejs") %>
 </section>
 <%- include("footer.ejs") %>

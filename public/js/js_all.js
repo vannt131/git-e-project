@@ -75,8 +75,8 @@ jQuery(document).ready(function($) {
             // Ngược lại, nhỏ hơn 150px thì hide menu đi.
             TopFixMenu.removeClass('fix-header');
             back_to_top.removeClass('back-to-top-mod');
-        }}
-    )
+        }
+    })
 });
 
 var ttm = document.getElementById("testimonial-text");
@@ -175,4 +175,20 @@ $(document).ready(function (){
             $('.show-password').attr('type','password');
         }
     });
+});
+
+// payment-fixed
+var client_height = document.getElementById('client-height').clientHeight;
+$(document).ready(function (){
+    var checkout_fixed = $('.total-payment-fixed');
+    console.log(client_height);
+    $(window).scroll(function (){
+        if($(this).scrollTop() > client_height){
+            checkout_fixed.removeClass('total-payment-fixed');
+            checkout_fixed.addClass('total-payment');
+        }else{
+            checkout_fixed.addClass('total-payment-fixed');
+            checkout_fixed.removeClass('total-payment');
+        }
+    })
 });

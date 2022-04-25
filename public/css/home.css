@@ -298,6 +298,7 @@ span#btn-next{
     border-bottom: 1px solid #dad5d5;
 }
 .service-fourth i{
+    margin: 20px 10px;
     transition: all 600ms ease-in-out;
 }
 .service .service-fourth:hover i{
@@ -380,7 +381,7 @@ span#btn-next{
     position: absolute;
     border: 20px solid transparent;
     border-top: 20px solid #232323;
-    left: 48%;
+    left: 25%;
     bottom: -40px;
 }
 

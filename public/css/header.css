@@ -6,6 +6,8 @@
     position: sticky;
     top: 0;
     z-index: 100;
+    animation-name: header-animation;
+    animation-duration: 1s;
 }
 .fix-header .menu .icon-menu{
     float: left;
@@ -19,7 +21,10 @@
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
-    transition: all 400ms ease-in-out;
+}
+@keyframes header-animation {
+    from{top: -1000px}
+    to{top: 0}
 }
 .header .logo{
     float: left;
@@ -27,7 +32,9 @@
     opacity: 0.9;
     padding: 20px 100px 0 20px;
 }
-
+.fix-header .logo{
+    padding: 0 100px 0 20px;
+}
 a{
     text-decoration: none;
     color: #242424;
@@ -38,10 +45,13 @@ a:hover{
 ul{
     margin: 0;
 }
-#nav{
+.header #nav{
     float: left;
     padding: 20px;
     margin-top: 20px;
+}
+.fix-header #nav{
+    margin-top: 0px;
 }
 
 .menu{
@@ -50,6 +60,9 @@ ul{
 .header .menu .icon-menu{
     float: left;
     padding: 30px;
+}
+.fix-header .menu .icon-menu{
+    padding: 10px;
 }
 
 #nav, .subnav{
@@ -73,13 +86,13 @@ ul{
 #nav > li:hover > a{
     color: #ed0f0f;
     transform: scale(1.05);
-    transition: all 500ms;
+    transition: all 300ms ease-in-out;
 }
 #nav .subnav{
-    opacity: 0;
+    display: none;
     position: absolute;
     right: 10px;
-    top: 30px;
+    top: 40px;
     background-color: #ffffff;
     box-shadow: rgba(0, 0, 0, 0.07) 0 1px 1px, rgba(0, 0, 0, 0.07) 0 2px 2px, rgba(0, 0, 0, 0.07) 0 4px 4px, rgba(0, 0, 0, 0.07) 0 8px 8px, rgba(0, 0, 0, 0.07) 0 16px 16px;
     min-width: 150px;
@@ -87,8 +100,13 @@ ul{
     transition: all 300ms ease-in-out;
 }
 #nav li:hover .subnav{
-    opacity: 1;
-    top: 40px;
+    display: block;
+    animation-name: subnav-animation;
+    animation-duration: 0.5s;
+}
+@keyframes subnav-animation {
+    from{display: none;right: 10px;top: 30px;}
+    to{display: block;right: 10px;top: 40px;}
 }
 #nav .subnav a{
     font-size: 15px;
@@ -99,6 +117,7 @@ ul{
 .nav-angle-down{
     font-size: 20px;
     margin: 0 10px;
+    transition: all 100ms ease-in-out;
 }
 #nav li:hover .nav-angle-down{
     transform: rotate(180deg);
@@ -115,7 +134,7 @@ ul{
 }
 .icon-menu a:hover, .fa-search:hover{
     color: #ed0f0f;
-    transition: all 500ms;
+    cursor: pointer;
 }
 
 .icon-menu .fa{
@@ -128,7 +147,7 @@ ul{
 .fa-times:hover{
     color: #ed0f0f;
     cursor: pointer;
-    transition: all 300ms ease-in-out;
+
 }
 
 .count{
@@ -143,25 +162,25 @@ ul{
     display: none;
     position: absolute;
     top: 120px;
-    right: 230px;
+    right: 250px;
     width: 240px;
-    height: 50px;
+    height: 55px;
     background: #ffffff;
     z-index: 100;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    transition: all 900ms ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border: 1px solid #ccc;
+    animation-name: search-btn-animation;
+    animation-duration: 0.2s;
+}
+.fix-header .search-btn{
+    top: 90px;
+}
+@keyframes search-btn-animation {
+    from{top: 110px;right: 230px}
+    to{top: 120px;right: 250px}
 }
 .search-btn-show{
     display: block;
-    position: absolute;
-    top: 120px;
-    right: 250px;
-    width: 240px;
-    height: 50px;
-    background: #ffffff;
-    z-index: 100;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    transition: all 900ms ease-in-out;
 }
 .search-input{
     border: 0;

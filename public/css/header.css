@@ -20,7 +20,6 @@
     margin-right: auto;
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
 }
 @keyframes header-animation {
     from{top: -1000px}
@@ -30,10 +29,10 @@
     float: left;
     display: flex;
     opacity: 0.9;
-    padding: 20px 100px 0 20px;
+    padding: 35px 100px 0 20px;
 }
 .fix-header .logo{
-    padding: 0 100px 0 20px;
+    padding: 10px 100px 0 20px;
 }
 a{
     text-decoration: none;
@@ -47,7 +46,7 @@ ul{
 }
 .header #nav{
     float: left;
-    padding: 20px;
+    padding: 25px;
     margin-top: 20px;
 }
 .fix-header #nav{
@@ -59,7 +58,7 @@ ul{
 }
 .header .menu .icon-menu{
     float: left;
-    padding: 30px;
+    padding: 35px;
 }
 .fix-header .menu .icon-menu{
     padding: 10px;

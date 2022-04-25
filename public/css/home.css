@@ -333,8 +333,10 @@ span#btn-next{
     transition: all 300ms ease-in-out;
 }
 .outer i{
+    font-size: 20px;
     display: flex;
     padding: 10px;
+    margin: 20px 10px;
     background-color: white;
 
 }
@@ -388,13 +390,19 @@ span#btn-next{
     transition: all 300ms ease-in-out;
 }
 .testimonial .tes-thubnail{
+    display: inline-block;
+    width: 150px;
     padding: 0 20px;
 }
-.testimonial #active-img1{
+.tes-thubnail p{
+    font-weight: 100;
+    text-align: center;
+}
+.tes-active img{
     border: 3px solid #ed0f0f;
     transform: scale(1.2);
 }
-.testimonial #active-text1{
+.tes-active h4{
     color: #ed0f0f;
 }
 .tes-thubnail h4{

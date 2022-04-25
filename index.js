@@ -60,6 +60,10 @@ app.get("/account-forgot-password",function (req,res){
     res.render("account_forgot_password");
 })
 
+app.get("/search",function (req,res){
+    res.render("search");
+})
+
 app.get("/wishlist",function (req,res){
     res.render("wishlist");
 })

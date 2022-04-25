@@ -41,6 +41,7 @@ ul{
 #nav{
     float: left;
     padding: 20px;
+    margin-top: 20px;
 }
 
 .menu{
@@ -87,7 +88,7 @@ ul{
 }
 #nav li:hover .subnav{
     opacity: 1;
-    top: 70px;
+    top: 40px;
 }
 #nav .subnav a{
     font-size: 15px;
@@ -96,8 +97,8 @@ ul{
     font-weight: 400;
 }
 .nav-angle-down{
-    font-size: 10px;
-    margin: 0;
+    font-size: 20px;
+    margin: 0 10px;
 }
 #nav li:hover .nav-angle-down{
     transform: rotate(180deg);
@@ -109,19 +110,69 @@ ul{
     transition: all 500ms;
 }
 
-.icon-menu a:hover{
+.icon-menu{
+    margin-left: 100px;
+}
+.icon-menu a:hover, .fa-search:hover{
     color: #ed0f0f;
     transition: all 500ms;
 }
-.fa, .fa-search{
+
+.icon-menu .fa{
     font-size: 20px;
     margin: 20px 10px;
+}
+.fa-times{
+    padding: 0 3px;
+}
+.fa-times:hover{
+    color: #ed0f0f;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
 }
 
 .count{
     color: #ffffff;
     background-color: #ed0f0f;
-    border-radius: 50%;
     padding: 2px 5px;
     margin-left: -10%;
+    border-radius: 10px;
+}
+
+.search-btn{
+    display: none;
+    position: absolute;
+    top: 120px;
+    right: 230px;
+    width: 240px;
+    height: 50px;
+    background: #ffffff;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 900ms ease-in-out;
+}
+.search-btn-show{
+    display: block;
+    position: absolute;
+    top: 120px;
+    right: 250px;
+    width: 240px;
+    height: 50px;
+    background: #ffffff;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 900ms ease-in-out;
+}
+.search-input{
+    border: 0;
+    outline: 0;
+    padding-left: 20px;
+}
+
+.search-btn i{
+    padding: 15px;
+    margin: 0;
+}
+.search-btn .fa-search{
+    font-size: 20px;
 }

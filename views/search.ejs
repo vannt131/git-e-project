@@ -1,13 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Eyeonic - Radius website</title>
+
     <%- include("stylesheet.ejs") %>
+    <link rel="stylesheet" href="/css/search.css">
 </head>
 <body>
 <%- include("header.ejs") %>
 <section class="section">
+    <div class="breadcrumb">
+        <h3>Search Results</h3>
+        <ul class="menu-item">
+            <li><a href="/">Home</a></li>
+            <li><a href="/search">Search Results</a></li>
+        </ul>
+    </div>
 </section>
 <%- include("footer.ejs") %>
 <script type="text/javascript" src="/js/jquery.js"></script>

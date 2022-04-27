@@ -70,7 +70,7 @@ ul li{
 }
 
 
-.detail-product{
+.product-container{
     float: none;
     margin: 0 auto 100px auto;
     max-width: 1400px;
@@ -171,7 +171,7 @@ ul li{
 
 .buy-now, .add-cart{
     display: inline-block;
-    margin: 20px;
+    margin: 20px 20px 20px 0;
 }
 .buy-now a, .add-cart a{
     color: #ffffff;
@@ -185,5 +185,90 @@ ul li{
 
 .add-wishlish, .share{
     display: inline-block;
+    margin: 0 20px 20px 0;
+}
+.add-wishlish a:hover, .share a:hover{
+    color: #ed0f0f;
+}
+
+
+.product-tab{
+
+}
+.tab{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 100px 0 50px;
+}
+.tab-nav{
     margin: 0 20px;
+}
+.tab-nav-active{
+    color: #ed0f0f;
+}
+.tab-nav:hover{
+    color: #ed0f0f;
+    cursor: pointer;
+}
+
+.tab-content{
+    border: 1px solid #ccc;
+    padding: 50px;
+}
+.description-content, .details-content, .attachments-content{
+    display: none;
+}
+
+.tab-active{
+    display: block;
+}
+
+
+
+
+.popular-product{
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+}
+.popular-product .products .col-md-3{
+    margin-bottom: 50px;
+}
+.popular-product .star i{
+    margin: 0;
+    font-size: 10px;
+}
+.popular-product a{
+    color: #242424;
+}
+.popular-product a:hover{
+    color: #ed0f0f;
+    transition: all 200ms;
+}
+.popular-product img{
+
+}
+.outer{
+    position: absolute;
+    right: 0;
+    bottom: 130px;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+}
+.outer  i{
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px 10px 0;
+    background-color: white;
+    cursor: pointer;
+}
+.outer i:hover{
+    color: #ed0f0f;
+}
+.popular-product .col-md-3:hover .outer{
+    opacity: 1;
+    right: 10px;
 }

@@ -1,0 +1,36 @@
+.side-bar{
+    padding: 0 10px;
+}
+.block-categories{
+    border: 1px solid #ccc;
+}
+.block-categories .title-block{
+    background: #ccc;
+    padding: 10px;
+    margin: 0;
+}
+.sub-categories{
+    padding: 10px;
+}
+
+.new-products-block{
+    border: 1px solid #ccc;
+}
+.new-products-block .title-block{
+    background: #ccc;
+    padding: 10px;
+    margin: 0;
+}
+.product-item{
+    display: flex;
+    margin: 20px 0;
+}
+.product-item .star i{
+    font-size: 10px;
+}
+.product-item .right{
+    padding: 0;
+}
+a:hover{
+    color: #ed0f0f;
+}

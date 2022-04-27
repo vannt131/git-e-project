@@ -67,3 +67,23 @@ a{
 ul li{
     list-style-type: none;
 }
+
+.product-selection{
+    display: flex;
+    float: none;
+    margin: 0 auto 100px auto;
+    max-width: 1400px;
+}
+
+.sort-by-row{
+    padding: 10px;
+}
+.select-sort{
+    display: inline-block;
+    border: 1px solid #242424;
+    padding: 10px;
+    margin-left: 20px;
+}
+.select-sort i{
+    padding-left: 400px;
+}

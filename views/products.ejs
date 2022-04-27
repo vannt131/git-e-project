@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eyeonic - Radius website</title>
+
+    <%- include("stylesheet.ejs") %>
+    <link rel="stylesheet" href="/css/products.css">
+</head>
+<body>
+<%- include("header.ejs") %>
+      <section class= "section">
+          <div class="breadcrumb">
+              <h3>Products</h3>
+              <ul class="menu-item">
+                  <li><a href="/">Home</a></li>
+                  <li>Products</li>
+              </ul>
+          </div>
+          <section id="products">
+              <div class="filter col-md-4">
+                  <div class="sort">
+                      <h4 style="display: inline-block">Sort by:</h4>
+                      <select name="`" id="sort-by">
+                          <option value="">Name, A to Z</option>
+                          <option value="">Name, Z to A</option>
+                          <option value="">Price, low to high</option>
+                          <option value="">Price, high to low</option>
+                      </select>
+                  </div>
+                  <h3 class="filter-heading"><i class="fa fa-filter"></i>Filter</h3>
+                  <div class="filter-body">
+                      <div>
+                          <h4 class="filter-title"></i>Price</h4>
+                          <div class="filter-collapse">
+                              <ul class="list-group">
+                                  <li class="list-group-item">
+                                      <div class="checkbox">
+                                          <label><input type="checkbox" value="">0 - 100$</label>
+                                      </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                      <div class="checkbox">
+                                          <label><input type="checkbox" value="">100$ - 200$</label>
+                                      </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                      <div class="checkbox">
+                                          <label><input type="checkbox" value="">200$ - 600$</label>
+                                      </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                      <div class="checkbox">
+                                          <label><input type="checkbox" value=""> > 600$</label>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div>
+                          <h4 class="filter-title">Brand</h4>
+                          <div class="filter-collapse">
+                              <ul class="list-group">
+                                  <li class="list-group-item">
+                                      <div class="checkbox">
+                                          <label><input type="checkbox" value="">Diamond D</label>
+                                      </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                      <div class="checkbox">
+                                          <label><input type="checkbox" value="">Philippe auguste</label>
+                                      </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                      <div class="checkbox">
+                                          <label><input type="checkbox" value="">Ray Ban</label>
+                                      </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                      <div class="checkbox">
+                                          <label><input type="checkbox" value="">Burberry</label>
+                                      </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                      <div class="checkbox">
+                                          <label><input type="checkbox" value="">Prada milano</label>
+                                      </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                      <div class="checkbox">
+                                          <label><input type="checkbox" value="">Michael Kors</label>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div>
+                          <h4 class="filter-title">Color</h4>
+                          <div class="filter-collapse">
+                              <ul class="list-group">
+                                  <li class="list-group-item">
+                                      <div class="checkbox">
+                                          <label><input type="checkbox" value="">Red</label>
+                                      </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                      <div class="checkbox">
+                                          <label><input type="checkbox" value="">Blue</label>
+                                      </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                      <div class="checkbox">
+                                          <label><input type="checkbox" value="">Gray</label>
+                                      </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                      <div class="checkbox">
+                                          <label><input type="checkbox" value="">Black</label>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div>
+                          <h4 class="filter-title">Size</h4>
+                          <div class="filter-collapse">
+                              <ul class="list-group">
+                                  <li class="list-group-item">
+                                      <div class="checkbox">
+                                          <label><input type="checkbox" value="">S</label>
+                                      </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                      <div class="checkbox">
+                                          <label><input type="checkbox" value="">M</label>
+                                      </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                      <div class="checkbox">
+                                          <label><input type="checkbox" value="">L</label>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="box-product col-md-8">
+                  <div class="product-item col-md-3">
+                      <a href="/products/detail-product"><img src="https://demo.codezeel.com/prestashop/PRS18/PRS180433/img/p/2/4/24-home_default.jpg" alt=""></a>
+                      <div class="star" style="color: yellow" >
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                      </div>
+                      <h4><a href="/products/detail-product">Roadies Rd-202 Round Protection</a></h4>
+                      <h3 style="color: #ed0f0f">$56.12</h3>
+                      <div class="outer">
+                          <a href="/wishlish"><i class="fa fa-heart"></i></a>
+                          <a href="/products/detail-product"><i class="fa fa-eye"></i></a>
+                          <a href="/products/detail-product"><i class="fa fa-shopping-bag"></i></a>
+                      </div>
+                  </div><div class="product-item col-md-3">
+                      <a href="/products/detail-product"><img src="https://demo.codezeel.com/prestashop/PRS18/PRS180433/img/p/2/4/24-home_default.jpg" alt=""></a>
+                      <div class="star" style="color: yellow" >
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                      </div>
+                      <h4><a href="/products/detail-product">Roadies Rd-202 Round Protection</a></h4>
+                      <h3 style="color: #ed0f0f">$56.12</h3>
+                      <div class="outer">
+                          <a href="/wishlish"><i class="fa fa-heart"></i></a>
+                          <a href="/products/detail-product"><i class="fa fa-eye"></i></a>
+                          <a href="/products/detail-product"><i class="fa fa-shopping-bag"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </section>
+      </section>
+<%- include("footer.ejs") %>
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/js_all.js"></script>
+</body>
+</html>

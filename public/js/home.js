@@ -66,11 +66,3 @@ $(document).ready(function (){
         $(this).toggleClass('tes-active');
     });
 });
-
-// search
-$(document).ready(function (){
-    $('.icon-search').click(function (event){
-        $(this).children('i').toggleClass('fa fa-times fa fa-search');
-        $('.search-btn').toggleClass('search-btn-show search-btn search-btn');
-    });
-});

@@ -69,27 +69,80 @@ ul li{
     list-style-type: none;
 }
 
-.box-content {
+#products{
     display: flex;
     float: none;
     max-width: 1400px;
     margin: 0 auto 100px auto;
 }
 
+.sort{
+}
+#sort-by{
+    width: 200px;
+    padding: 5px 20px;
+    outline: 0;
+}
 
-.about-us{
-    text-align: center;
-    justify-content: center;
-    padding: 0 100px;
+.filter{
+    padding: 0 100px 50px;
 }
-.content-us{
+.filter-heading{
+
+}
+.filter-body{
+    border: 1px solid #ccc;
     display: inline-block;
-    border-bottom: 1px solid #ccc;
+    width: 100%;
 }
-.criteria{
-    display: inline-block;
-    margin: 50px;
+.filter-body .filter-title{
+    color: #ffffff;
+    background: #ed0f0f;
+    padding: 10px 30px;
+    margin: 0;
 }
-.achievements{
-    display: inline-block;
+.list-group-item{
+    display: flex;
+    border: 0;
+    padding: 0 0 0 20px;
+
 }
+
+
+.box-product{
+
+}
+.product-item .star i{
+    margin: 20px 0 10px;
+    font-size: 10px;
+}
+.box-product a:hover{
+    color: #ed0f0f;
+    transition: all 200ms;
+}
+.box-product img{
+    position: relative;
+}
+.outer{
+    position: absolute;
+    right: 0;
+    bottom: 130px;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+}
+.outer i{
+    font-size: 15px;
+    display: flex;
+    padding: 10px;
+    margin: 20px 10px;
+    background-color: white;
+
+}
+.outer i:hover{
+    color: #ed0f0f;
+}
+.box-product .col-md-3:hover .outer{
+    opacity: 1;
+    right: 10px;
+}
+

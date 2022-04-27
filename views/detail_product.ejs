@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eyeonic - Radius website</title>
+
+    <%- include("stylesheet.ejs") %>
+    <link rel="stylesheet" href="/css/detail_product.css">
+</head>
+<body>
+<%- include("header.ejs") %>
+<section class="section">
+    <div class="breadcrumb">
+        <h3>Roadies Rd-202 Round Protection</h3>
+        <ul class="menu-item">
+            <li><a href="/products">Products</a></li>
+            <li>Roadies Rd-202 Round Protection</li>
+        </ul>
+    </div>
+    <div class="detail-product">
+        <div class="product-content">
+            <div class="product-img col-md-6">
+                <img src="https://demo.codezeel.com/prestashop/PRS18/PRS180433/img/p/2/4/24-large_default.jpg" alt="">
+                <div class="sub-img"></div>
+            </div>
+            <div class="product-information col-md-6">
+                <div class="star" style="color: yellow" >
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
+                <h4>Available In Stock: <span style="color: #5cb85c;">998 items</span></h4>
+                <div class="product-size">
+                    <p>Size:</p>
+                    <select name="size" id="size">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                </div>
+                <div class="product-color">
+                    <h4>Color:</h4>
+                    <div class="color-item product-color-active" style="background: #ed0f0f;"></div>
+                    <div class="color-item" style="background: #2aabd2;"></div>
+                    <div class="color-item" style="background: #5cb85c;"></div>
+                </div>
+                <h2><span style="text-decoration: line-through;opacity: 0.8;margin-right: 10px">64.00$</span><span style="color: #ed0f0f">58.88$</span></h2>
+                <div class="buttons_added">
+                    <input class="minus is-form" type="button" value="-">
+                    <input aria-label="quantity" class="input-qty" max="99" min="1" name="" type="number" value="1">
+                    <input class="plus is-form" type="button" value="+">
+                </div>
+                <div>
+                    <div class="buy-now">
+                        <h2><a href="">BUY NOW</a></h2>
+                    </div>
+                    <div class="add-cart">
+                        <h2><a href="">ADD TO CART</a></h2>
+                    </div>
+                </div>
+                <div>
+                    <div class="add-wishlish">
+                        <a href=""><i class="fa fa-heart"></i>
+                            Add to wishlish</a>
+                    </div>
+                    <div class="share">
+                        <a href=""><i class="fa fa-share-alt"></i>
+                            Share with others</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<%- include("footer.ejs") %>
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/js_all.js"></script>
+<script type="text/javascript" src="/js/detail_product.js"></script>
+</body>
+</html>

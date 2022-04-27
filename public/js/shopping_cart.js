@@ -14,6 +14,13 @@ $(document).ready(function (){
     })
 });
 
+$(document).ready(function (){
+    $('.color-item').click(function (){
+        $('.product .product-color .color-item').removeClass('product-color-active');
+        $(this).toggleClass('product-color-active');
+    });
+});
+
 
 $('input.input-qty').each(function() {
     var $this = $(this),

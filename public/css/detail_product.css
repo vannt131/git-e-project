@@ -69,85 +69,47 @@ ul li{
     list-style-type: none;
 }
 
-.shop-cart{
-    display: block;
+
+.detail-product{
     float: none;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 100px auto;
     max-width: 1400px;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.product-content{
+    display: flex;
 }
 
-.title{
-    color: #ffffff;
-    background: #ed0f0f;
-}
-
-.product{
+.product-information .description{
+    padding: 20px 0;
+    margin-bottom: 20px;
     border-bottom: 1px solid #ccc;
 }
-.product .checkbox-btn{
-    padding: 35px 0 0 20px;
-}
 
-.product .product-img{
-    display: inline-block;
-    width: 110px;
-    padding-top: 10px;
+.product-size{
+    padding: 10px 0;
 }
-.product a:hover{
-    color: #ed0f0f;
-    transition: all 300ms ease-in-out;
-}
-.product .product-infor{
+.product-size p{
     display: inline-block;
 }
-
-.product-infor .star i{
-    font-size: 10px;
-    margin: 0 0 10px;
-}
-.product-infor h4{
-    margin-top: 0;
-}
-
-.product .product-size p{
-    display: inline-block;
-}
-.product .product-size section{
-    display: inline-block;
+.product-size #size{
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    outline: 0;
 }
 
 .product-color .color-item{
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     opacity: 0.6;
-}
-.product-color i{
-    display: none;
 }
 .color-item.product-color-active{
     border: 3px solid #242424;
     opacity: 1;
 }
 
-.product .product-price{
-    color: #ed0f0f;
-    padding-top: 10px;
-}
 
-.product .delete{
-    font-weight: 900;
-    opacity: 0.8;
-    padding: 30px;
-}
-.delete:hover{
-    color: #ed0f0f;
-    cursor: pointer;
-    transition: all 300ms ease-in-out;
-}
 .buttons_added {
     opacity:1;
     display:inline-block;
@@ -207,81 +169,21 @@ ul li{
     margin:0;
 }
 
-
-.total-payment{
-    display: flex;
-    float: none;
-    justify-content: center;
-    margin: 0 auto 100px auto;
-    max-width: 1400px;
-    background: #f9f9f9;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-}
-.total-payment-fixed{
-    display: flex;
-    float: none;
-    justify-content: center;
-    margin: 0 auto 100px auto;
-    width: 100%;
-    position: fixed;
-    bottom: -100px;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    background: #f9f9f9;
-    z-index: 100;
-}
-
-.adver{
+.buy-now, .add-cart{
     display: inline-block;
+    margin: 20px;
 }
-.adver p{
-    padding: 35px 10px 30px 30px;
-    display: inline-block;
-    color: #ed0f0f;
-}
-
-.discount-content{
-    display: inline-block;
-    border: 1px solid #ccc;
-}
-.discount .discount-text{
-    border: none;
-    padding: 10px;
-}
-.discount .discount-text:focus{
-    outline: 0;
-}
-.discount button{
-    border: none;
-    color: #ffffff;
-    background: #a6a4a4;
-    padding: 16px 10px;
-    margin-right: -1px;
-    transition: all 300ms ease-in-out;
-}
-.discount button:hover{
-    background: #ccc;
-}
-
-.total{
-
-}
-.total div{
-    display: inline-block;
-}
-.checkout{
-    display: inline-block;
-    padding: 10px 0 0 200px;
-}
-.checkout a{
+.buy-now a, .add-cart a{
     color: #ffffff;
     background: #ed0f0f;
-    padding: 10px 20px;
-    margin-left: 20px;
+    padding: 10px 60px;
     transition: all 300ms ease-in-out;
 }
-.checkout a:hover{
+.buy-now a:hover, .add-cart a:hover{
     background: #242424;
-    cursor: pointer;
-
 }
 
+.add-wishlish, .share{
+    display: inline-block;
+    margin: 0 20px;
+}

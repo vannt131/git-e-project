@@ -7,193 +7,57 @@
 
     <%- include("stylesheet.ejs") %>
     <link rel="stylesheet" href="/css/aboutus.css">
-    <link rel="stylesheet" href="/css/popular_product.css">
+    <link rel="stylesheet" href="/css/side_bar.css">
 </head>
 <body>
 <%- include("header.ejs") %>
-     <section class = "col-md-12">
+     <section class = "section">
          <div class="breadcrumb">
-             <h3>Contact US</h3>
+             <h3>About US</h3>
              <ul class="menu-item">
                  <li><a href="/">Home</a></li>
-                 <li><a href="/contact-us">Contact us</a></li>
+                 <li>About us</li>
              </ul>
          </div>
-         <div class= "container">
+         <div class= "box-content">
              <div class = "left col-md-3">
-                 <div class = "left-top">
-                     <h4 class = "block-title hidden-md-down">
-                         <a href= "#">Menu</a>
-                     </h4>
-                     <ul>
-                         <li>
-                             <ul class = "sub-menu">
-                                 <li>
-                                     <a class = "sub-link" href= "#">Home</a>
-                                 </li>
-                             </ul>
-                             <ul class = "sub-menu">
-                                 <li>
-                                     <a class = "sub-link" href = "#">Product</a>
-                                 </li>
-                             </ul>
-                             <ul class = "sub-menu">
-                                 <li>
-                                     <a class= "sub-link" href= "#">Shopping cart</a>
-                                 </li>
-                             </ul>
-                             <ul class = "sub-menu">
-                                 <li>
-                                     <a class= "sub-link" href ="#">More</a>
-                                 </li>
-                             </ul>
-                         </li>
-                     </ul>
-                 </div>
-                 <div class = "left-middle">
-                     <ul>
-                         <li class = "banner">
-                             <a href="#" title= "Say hello Summer!"><img src="/image/left-banner.jpg"></a>
-                         </li>
-                     </ul>
-                 </div>
-                 <div class = "left-bottom">
-                     <h4 class = "block_title hidden-md-down">New Products</h4>
-                     <div class = "content">
-                         <ul>
-                             <li class = "product_item">
-                                 <div class = "item-thumbnail">
-                                     <a href= "#" class = "item-thumbnail-image">
-                                         <img class= "lazyload" src= "/image/24-small_default.jpg"
-                                              alt = "Roadies rd-202 round ..."
-                                              loading= "lazy"
-                                         >
-                                     </a>
-                                 </div>
-                                 <div class= "item-info">
-                                     <div class = "comment">
-                                         <div class = "star-content">
-                                             <div class= "star star_on"></div>
-                                             <div class= "star star_on"></div>
-                                             <div class= "star star_on"></div>
-                                             <div class= "star star_on"></div>
-                                             <div class= "star star_on"></div>
-                                         </div>
-                                         <h5 class="product-title"><a href= "#">Roadies rd-202 round...</a></h5>
-                                         <div class = product-price>
-                                             <span class = "regular-price" aria-label= "Regular price">$61.00</span>
-                                             <span class = "discount-product">-8%</span>
-                                             <span class = "price" aria-label="Price">$56.12</span>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </li>
-                             <li class= "product-item">
-                                 <div class = "item-thumbnail">
-                                     <a href= "#" class = "item-thumbnail-image">
-                                         <img class= "lazyload" src= "/image/120-small_default.jpg"
-                                              alt = "Hippie carnival glasses orange"
-                                              loading= "lazy"
-                                         >
-                                     </a>
-                                 </div>
-                                 <div class= "item-info">
-                                     <div class = "comment">
-                                         <div class = "star-content">
-                                             <div class= "star"></div>
-                                             <div class= "star"></div>
-                                             <div class= "star"></div>
-                                             <div class= "star"></div>
-                                             <div class= "star"></div>
-                                         </div>
-                                         <h5 class="product-title"><a href= "#">Hippie carnival glasses orange</a></h5>
-                                         <div class = product-price>
-                                             <span class = "regular-price" aria-label= "Regular price">$52.00</span>
-                                             <span class = "discount-product">-$5.00</span>
-                                             <span class = "price" aria-label="Price">$47.00</span>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </li>
-                             <li class= "product-item">
-                                 <div class = "item-thumbnail">
-                                     <a href= "#" class = "item-thumbnail-image">
-                                         <img class= "lazyload" src= "/image/113-small_default.jpg"
-                                              alt = "Iflash unisex wayfarer..."
-                                              loading= "lazy"
-                                         >
-                                     </a>
-                                 </div>
-                                 <div class= "item-info">
-                                     <div class = "comment">
-                                         <div class = "star-content">
-                                             <div class= "star star_on"></div>
-                                             <div class= "star star_on"></div>
-                                             <div class= "star star_on"></div>
-                                             <div class= "star star_on"></div>
-                                             <div class= "star star_on"></div>
-                                         </div>
-                                         <h5 class="product-title"><a href= "#">Iflash unisex wayfarer...</a></h5>
-                                         <div class = product-price>
-                                             <span class = "price" aria-label="Price">$47.00</span>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </li>
-                         </ul>
-                         <div class= "view-more">
-                             <a class= "all-product-link btn btn-primary" href= "#">
-                                 All new products
-                             </a>
-                         </div>
-                     </div>
-                 </div>
-                 <div class = "block blog-menu">
-                     <h4 class= "block-title hidden-md-down">Blog Categories</h4>
-                     <div class= "block_content">
-                         <ul>
-                             <li><a href="#"><span>Vestibulum consequat</span></a></li>
-                             <li><a href="#"><span>Pellentesque condimentum</span></a></li>
-                             <li><a href="#"><span>Suspendisse turpis</span></a></li>
-                         </ul>
-                     </div>
-                 </div>
+                 <%- include("side_bar.ejs") %>
              </div>
-             <div class="col-md-9">
-                 <div class = "row col-md-12">
-                     <h3 class="text-center">Eyeonic-Paradise Eyeglasses</h3>
-                     <p class="text-center">We are bulding Eyeonic</p>
-                     <h4 class="text-center text-uppercase">Simply because love glasses.</h4>
-                     <p class="text-center">With an endless passion for glasses, our team worked well together to create Eyeonic to give people an interesting experience of shopping for eyeglasses online with countless eyeglasses models from classic to modern, from middle-aged, mature to youthful personality ...</p>
+             <div class="about-us right col-md-9">
+                 <div class = "content-us">
+                     <h1>Eyeonic-Paradise Eyeglasses</h1>
+                     <p>(We are bulding Eyeonic...)</p>
+                     <h4>Simply because love glasses.</h4>
+                     <p>With an endless passion for glasses, our team worked well together to create Eyeonic to give people an interesting experience of shopping for eyeglasses online with countless eyeglasses models from classic to modern, from middle-aged, mature to youthful personality ...</p>
                  </div>
-                 <div class="row col-md-12">
-                     <h3 class="text-center">Eyeonic's criteria</h3>
-                     <div class="row-item">
-                         <img class = "image-left" src="/image/cskh.jpg">
+                 <div class="criteria">
+                     <h3><u>Eyeonic's criteria</u></h3>
+                     <div class="col-md-4">
+                         <img src="/image/cskh.jpg">
                          <p>Enthusiastic, attentive, respectful customer</p>
                      </div>
-                     <div class="row-item">
-                         <img class = "image-right" src="/image/genuine.jpg">
+                     <div class="col-md-4">
+                         <img src="/image/genuine.jpg">
                          <p>Genuine product commitment</p>
                      </div>
-                     <div class="row-item">
-                         <img class = "image-left" src="/image/ship.jpg">
+                     <div class="col-md-4">
+                         <img src="/image/ship.jpg">
                          <p>Fast shipping, ensuring</p>
                      </div>
                  </div>
-                 <div class="row col-md-12">
-                     <p class="text-center">After 3 years of development, Eyeonic has achieved the following achievements</p>
+                 <div class="achievements">
+                     <h4>After 3 years of development, Eyeonic has achieved the following achievements</h4>
                      <div class="col-md-4">
                          <img src = "/image/1.jpg">
-                         <p class="text-center">Linked to more than 200 eyeglasses cave labels</p>
+                         <p>Linked to more than 200 eyeglasses cave labels</p>
                      </div>
                      <div class="col-md-4">
                          <img src = "/image/2.jpg">
-                         <p class="text-center">Successfully shipped more than 20,000 orders to customers</p>
+                         <p>Successfully shipped more than 20,000 orders to customers</p>
                      </div>
                      <div class="col-md-4">
                          <img src = "/image/3.jpg">
-                         <p class="text-center">Gained over 18,000 5* reviews from Eyeonic customers</p>
+                         <p>Gained over 18,000 5* reviews from Eyeonic customers</p>
                      </div>
                  </div>
              </div>

@@ -28,7 +28,11 @@ app.get("/",function (req,res){
 })
 
 app.get("/products",function (req,res){
-    res.render("product");
+    res.render("products");
+})
+
+app.get("/products/detail-product",function (req,res){
+    res.render("detail_product");
 })
 
 app.get("/shopping-cart",function (req,res){

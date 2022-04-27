@@ -6,6 +6,7 @@
 
     <%- include("stylesheet.ejs") %>
     <link rel="stylesheet" href="/css/wishlist.css">
+    <link rel="stylesheet" href="/css/side_bar.css">
 </head>
 <body>
 <%- include("header.ejs") %>
@@ -14,13 +15,18 @@
         <h3>Wishlist</h3>
         <ul class="menu-item">
             <li><a href="/">Home</a></li>
-            <li><a href="/wishlist">Wishlist</a></li>
+            <li>Wishlist</li>
         </ul>
     </div>
-    <div class="wish-list">
-        <h2 class="text-center">You are not logged in, please login to view wishlist</h2>
-        <div class="login-btn text-center">
-            <a href="/account-log-in"><h4>Log In</h4></a>
+    <div class="box-content">
+        <div class = "left col-md-3">
+            <%- include("side_bar.ejs") %>
+        </div>
+        <div class="right wish-list col-md-9">
+            <h2 class="text-center">You are not logged in, please login to view wishlist</h2>
+            <div class="login-btn text-center">
+                <a href="/account-log-in"><h4>Log In</h4></a>
+            </div>
         </div>
     </div>
 </section>

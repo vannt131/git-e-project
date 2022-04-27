@@ -21,86 +21,67 @@
             <li>Contact us</li>
         </ul>
     </div>
-    <div class="container">
-        <div class="comlumns">
-            <div class="left-comlums">
-                <h3>Store Information</h3>
-                <div class="nd-left">
-                    <div>
-                        <div class="icon">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        </div>
-                        <div class="data">
-                            <p>Eyeonic store</p>
-                            <p>No. 8 Ton That Thuyet, My Dinh, Tu Liem, Ha Noi</p>
-                        </div>
-                    </div>
-                    <hr />
-                    <div>
-                        <div class="icon">
-                            <i class="fa fa-phone" aria-hidden="true"></i>
-                        </div>
-                        <div class="data">
-                            <p>Call us:</p>
-                            <p>000-000-0000</p>
-                        </div>
-                    </div>
-                    <hr />
-                    <div>
-                        <div class="icon">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                        </div>
-                        <div class="data">
-                            <p>Email us:</p>
-                            <a href="#"><p>eyeonic@gmail.com</p></a>
-                        </div>
-                    </div>
-                    <hr />
+    <div class="contact-information">
+        <div class="left col-md-3">
+            <h3>Store Information</h3>
+            <div class="box-infor">
+                <div class="data">
+                    <p><i class="fa fa-map-marker"></i>Eyeonic store: No. 8 Ton That Thuyet, My Dinh, Tu Liem, Ha Noi</p>
+                </div>
+                <div class="data">
+                    <p><i class="fa fa-phone"></i>Call us: 000-000-0000</p>
+                </div>
+                <div class="data">
+                    <p><i class="fa fa-envelope"></i>Email us:<a href="">eyeonic@gmail.com</a></p>
                 </div>
             </div>
-            <div class="right-comlumns">
-                <form method="get" action="#" class="form-contact">
-                    <div class="form-group">
-                        <label>Subject</label>
-                        <select>
-                            <option>Customer service</option>
-                            <option>Webmaster</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Email address</label>
-                        <input
-                                class="form-control"
-                                name="form"
-                                type="email"
-                                placeholder="Enter your email"
-                                required
-                        />
-                    </div>
-                    <div class="form-group">
-                        <label>Attachment</label>
-                        <div>
-                            <div class="inputFile"></div>
-                            <input type="file" id="file-upload" style="display: none">
-                            <label for="file-upload" style="display: inline-block">
-                                <h4 class="choose-file-btn">Choose file</h4>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label>Message</label>
-                        <textarea
-                                name=""
-                                id=""
-                                placeholder="How can we help?"
-                                required
-                        ></textarea>
-                    </div>
-                    <button type="submit" class="btn-submit"><h3>Send</h3></button>
-                </form>
-
-            </div>
         </div>
+        <div class="right col-md-9">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0966092835106!2d105.7801080148544!3d21.028820085998387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab86cece9ac1%3A0xa9bc04e04602dd85!2zRlBUIEFwdGVjaCBIw6AgTuG7mWkgLSBI4buHIFRo4buRbmcgxJDDoG8gVOG6oW8gTOG6rXAgVHLDrG5oIFZpw6puIFF14buRYyBU4bq_IChTaW5jZSAxOTk5KQ!5e0!3m2!1svi!2s!4v1651072858946!5m2!1svi!2s" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <div class="form-contact">
+        <form method="get" action="#">
+            <div class="form-group">
+                <label>Subject</label>
+                <select class="form-control">
+                    <option>Customer service</option>
+                    <option>Webmaster</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Email address</label>
+                <input
+                        class="form-control"
+                        name="form"
+                        type="email"
+                        placeholder="Enter your email"
+                        required
+                />
+            </div>
+            <div class="form-group">
+                <label>Attachment</label>
+                <div class="choose-file">
+                    <div class="inputFile"></div>
+                    <input type="file" id="file-upload">
+                    <label for="file-upload">
+                        <h4 class="choose-file-btn">Choose file</h4>
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Message</label>
+                <textarea
+                        name=""
+                        class="form-control"
+                        placeholder="How can we help?"
+                        required
+                ></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn-submit"><h4>Send</h4></button>
+            </div>
+        </form>
     </div>
 </section>
 <%- include("footer.ejs") %>

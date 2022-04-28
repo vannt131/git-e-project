@@ -1,0 +1,210 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #ffffff;
+    color: #242424;
+    font-size: 14px;
+    line-height: 1.25;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+a:hover{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: #242424;
+}
+.breadcrumb{
+    float: none;
+    background-image: url("https://demo.codezeel.com/prestashop/PRS18/PRS180433/themes/Sumkie/assets/img/codezeel/breadcrumb-bg.jpg");
+    text-align: center;
+    max-width: 1600px;
+    margin: 0 auto 100px auto;
+    padding: 82px 0;
+    background-size: initial;
+    background-repeat: no-repeat;
+}
+.breadcrumb h3{
+    float: none;
+    line-height: 40px;
+    padding: 0;
+    text-align: center;
+    width: auto;
+    font-weight: 500;
+    margin: 0 0 8px;
+    text-transform: capitalize;
+    font-size: 34px;
+    color: #ffffff;
+}
+.menu-item {
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+}
+.menu-item li:nth-child(1) {
+    border-right: 1px solid #ed0f0f;
+}
+.menu-item li:nth-child(2) {
+    padding-left: 15px;
+}
+.menu-item li:nth-child(1) {
+    padding: 0px 15px 0px 0px;
+}
+.menu-item li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.menu-item li a:hover {
+    color: #ed0f0f;
+}
+ul li{
+    list-style-type: none;
+}
+
+.product-wrp{
+    float: none;
+    margin: 0 auto 100px auto;
+    max-width: 1400px;
+}
+
+.product-selection{
+    display: flex;
+    padding: 0 20px 50px;
+}
+
+
+#grid.selected, #list.selected{
+    background: #ed0f0f;
+}
+
+.grid-list{
+    display: inline-block;
+}
+.grid-list li{
+    display: inline-block;
+    color: #ffffff;
+    background: #242424;
+    padding: 10px;
+}
+.grid-list li:hover{
+    background: #ed0f0f;
+    cursor: pointer;
+}
+
+
+.sort-by-row{
+    padding: 10px;
+}
+.sort-by-row h4{
+    display: inline-block;
+}
+#select-sort{
+    padding: 5px 400px 5px 20px;
+    outline: 0;
+}
+
+.grid-products{
+    display: none;
+}
+.grid-products .col-md-3{
+    margin-bottom: 50px;
+}
+
+.grid-products .star i{
+    margin: 0;
+    font-size: 10px;
+}
+.grid-products a{
+    color: #242424;
+}
+.grid-products a:hover{
+    color: #ed0f0f;
+    transition: all 200ms;
+}
+
+.grid-products .outer{
+    position: absolute;
+    right: 0;
+    bottom: 130px;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+}
+.grid-products .outer i{
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px 10px 0;
+    background-color: white;
+    cursor: pointer;
+}
+.grid-products .outer i:hover{
+    color: #ed0f0f;
+}
+.grid-products .col-md-3:hover .outer{
+    opacity: 1;
+    right: 10px;
+}
+
+.list-products{
+    display: none;
+}
+.list-products .star i{
+    margin: 0;
+    font-size: 10px;
+}
+.list-products a{
+    color: #242424;
+}
+.list-products a:hover{
+    color: #ed0f0f;
+    transition: all 200ms;
+}
+
+.list-products .outer{
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+}
+.list-products .outer i{
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px 10px 0;
+    background-color: white;
+    cursor: pointer;
+}
+.list-products .outer i:hover{
+    color: #ed0f0f;
+}
+.list-products .list-product-item:hover .outer{
+    opacity: 1;
+    right: 10px;
+}
+.list-products .product-infor{
+}
+.list-product-item{
+    display: flex;
+    margin: 0 0 40px;
+}
+.product-infor .add-cart a{
+    display: inline-block;
+    color: #ffffff;
+    background: #ed0f0f;
+    padding: 10px 50px;
+}
+.product-infor .add-cart a:hover{
+    background: #242424;
+}
+
+.grid-list-active{
+    display: block;
+}

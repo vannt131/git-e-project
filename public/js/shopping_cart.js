@@ -4,7 +4,7 @@ $(document).ready(function (){
     var checkout_fixed = $('.total-payment-fixed');
     console.log(client_height);
     $(window).scroll(function (){
-        if($(this).scrollTop() > client_height){
+        if($(this).scrollTop() > client_height-150){
             checkout_fixed.removeClass('total-payment-fixed');
             checkout_fixed.addClass('total-payment');
         }else{

@@ -75,7 +75,7 @@ ul li{
     margin-left: auto;
     margin-right: auto;
     max-width: 1400px;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
 .title{
@@ -208,14 +208,14 @@ ul li{
 }
 
 
-.total-payment{
+.total-payment {
     display: flex;
     float: none;
     justify-content: center;
     margin: 0 auto 100px auto;
     max-width: 1400px;
     background: #f9f9f9;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 .total-payment-fixed{
     display: flex;
@@ -225,7 +225,7 @@ ul li{
     width: 100%;
     position: fixed;
     bottom: -100px;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     background: #f9f9f9;
     z-index: 100;
 }

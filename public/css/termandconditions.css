@@ -76,6 +76,7 @@ ul li{
 }
 .right-tacofu{
     width: 75%;
+    margin-left: 125px;
 }
 .taco-firt{
     font-size: 20px;
@@ -84,8 +85,17 @@ ul li{
     margin: 0 15px 30px 15px;
 }
 .taco{
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.8;
     font-weight: 400;
     margin: 0 15px 30px 15px;
+}
+.taco-firt h1{
+    margin-bottom: 30px;
+    border-bottom: 5px solid black;
+}
+.taco h2{
+    margin-bottom: 30px;
+    border-bottom: 5px solid black;
+
 }

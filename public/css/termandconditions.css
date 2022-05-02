@@ -68,63 +68,34 @@ a{
 ul li{
     list-style-type: none;
 }
-
-.account{
+.tacofu{
     display: flex;
     float: none;
+    max-width: 1400px;
     margin: 0 auto 100px auto;
-    max-width: 1000px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.account .fa{
-    padding: 20px 10px;
+.right-tacofu{
+    width: 75%;
+    margin-left: 125px;
 }
-.wrapper-img{
-    padding: 50px;
+.taco-firt{
+    font-size: 20px;
+    line-height: 2;
+    font-weight: 400;
+    margin: 0 15px 30px 15px;
 }
-.form-account{
-    justify-content: center;
-    text-align: center;
-    padding: 50px 100px;
-    background: #f9f9f9;
+.taco{
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 400;
+    margin: 0 15px 30px 15px;
 }
+.taco-firt h1{
+    margin-bottom: 30px;
+    border-bottom: 5px solid black;
+}
+.taco h2{
+    margin-bottom: 30px;
+    border-bottom: 5px solid black;
 
-.form-group{
-    display: flex;
-    border: 1px solid #a6a4a4;
-    margin: 20px 0 20px 0;
-}
-.form-input{
-    font-size: 14px;
-    border: none;
-    outline: 0;
-    flex-grow: 1;
-    padding-left: 10px;
-}
-
-.sign-btn{
-    float: right;
-    width: 100%;
-    color: #ffffff;
-    border: 0;
-    background: #ed0f0f;
-    padding: 1px 20px;
-    margin-top: 30px;
-}
-.sign-btn:hover{
-    background: #242424;
-    transition: all 300ms ease-in-out;
-}
-
-.account-sub{
-    display: inline-block;
-    margin-top: 20px;
-}
-.account-sub a{
-    color: #ed0f0f;
-}
-input[type=checkbox], input[type=radio] {
-    margin: 4px 10px 0;
-    margin-top: 1px\9;
-    line-height: normal;
 }

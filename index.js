@@ -71,3 +71,7 @@ app.get("/search-results",function (req,res){
 app.get("/wishlist",function (req,res){
     res.render("wishlist");
 })
+
+app.get("/terms-and-conditions",function (req,res){
+    res.render("terms_and_conditions");
+})

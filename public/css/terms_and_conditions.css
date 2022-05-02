@@ -68,6 +68,8 @@ a{
 ul li{
     list-style-type: none;
 }
+
+
 .tacofu{
     display: flex;
     float: none;

@@ -103,16 +103,16 @@ ul li{
     margin: 0 auto 100px auto;
     max-width: 800px;
     padding: 50px 50px 100px;
-    border: 1px solid #ccc;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .choose-file{
-    height: 40px;
+    height: 40px;border: 1px solid #ccc;
 }
 .choose-file .inputFile{
     float: left;
     width: 80%;
     height: 100%;
-    border: 1px solid #ccc;
+
     background: #ccc;
 }
 
@@ -126,7 +126,7 @@ ul li{
     float: left;
     color: #ffffff;
     background: #242424;
-    padding: 10px 24px;
+    padding: 9px 24px;
     margin: 0;
 }
 .choose-file-btn:hover{

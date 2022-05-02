@@ -134,7 +134,7 @@ ul li{
 }
 .is-form.minus {
     color: #ffffff;
-    background: #ed0f0f;
+    background: #e16a6a;
     border-radius:4px 0 0 4px;
     font-size: 30px;
     transition: all 300ms ease-in-out;
@@ -143,7 +143,7 @@ ul li{
  }
 .is-form.plus {
     color: #ffffff;
-    background: #ed0f0f;
+    background: #e16a6a;
     border-radius:0 4px 4px 0;
     font-size: 20px;
     transition: all 300ms ease-in-out;
@@ -173,9 +173,15 @@ ul li{
     display: inline-block;
     margin: 20px 20px 20px 0;
 }
-.buy-now a, .add-cart a{
+.buy-now a{
     color: #ffffff;
     background: #ed0f0f;
+    padding: 10px 60px;
+    transition: all 300ms ease-in-out;
+}
+.add-cart a{
+    color: #ffffff;
+    background: #e74c3c;
     padding: 10px 60px;
     transition: all 300ms ease-in-out;
 }
@@ -216,7 +222,7 @@ ul li{
     border: 1px solid #ccc;
     padding: 50px;
 }
-.description-content, .details-content, .attachments-content{
+.description-content, .attachments-content{
     display: none;
 }
 
@@ -226,12 +232,14 @@ ul li{
 
 
 
-
 .popular-product{
     float: none;
     margin-left: auto;
     margin-right: auto;
     max-width: 1400px;
+}
+.popular-product .products{
+    display: inline-block;
 }
 .popular-product .products .col-md-3{
     margin-bottom: 50px;
@@ -248,7 +256,6 @@ ul li{
     transition: all 200ms;
 }
 .popular-product img{
-
 }
 .outer{
     position: absolute;
@@ -271,4 +278,11 @@ ul li{
 .popular-product .col-md-3:hover .outer{
     opacity: 1;
     right: 10px;
+}
+
+.reviews{
+    display: block;
+    float: none;
+    margin: 0 auto 100px auto;
+    max-width: 1400px;
 }

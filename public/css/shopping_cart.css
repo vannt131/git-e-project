@@ -82,12 +82,13 @@ ul li{
     color: #ffffff;
     background: #ed0f0f;
 }
+.title h4:nth-child(1){
+    padding-left: 20px;
+}
+
 
 .product{
     border-bottom: 1px solid #ccc;
-}
-.product .checkbox-btn{
-    padding: 35px 0 0 20px;
 }
 
 .product .product-img{
@@ -108,34 +109,14 @@ ul li{
     margin: 0 0 10px;
 }
 .product-infor h4{
-    margin-top: 0;
+    margin-top: 20px;
 }
 
-.product .product-size p{
-    display: inline-block;
-}
-.product .product-size section{
-    display: inline-block;
-}
 
-.product-color .color-item{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    opacity: 0.6;
-}
-.product-color i{
-    display: none;
-}
-.color-item.product-color-active{
-    border: 3px solid #242424;
-    opacity: 1;
-}
 
 .product .product-price{
     color: #ed0f0f;
-    padding-top: 10px;
+    padding: 10px 0 0 20px;
 }
 
 .product .delete{
@@ -172,7 +153,7 @@ ul li{
 }
 .is-form.minus {
     color: #ffffff;
-    background: #ed0f0f;
+    background: #e16a6a;
     border-radius:4px 0 0 4px;
     font-size: 30px;
     transition: all 300ms ease-in-out;
@@ -181,7 +162,7 @@ ul li{
  }
 .is-form.plus {
     color: #ffffff;
-    background: #ed0f0f;
+    background: #e16a6a;
     border-radius:0 4px 4px 0;
     font-size: 20px;
     transition: all 300ms ease-in-out;

@@ -66,3 +66,14 @@ $(document).ready(function (){
         $(this).toggleClass('tes-active');
     });
 });
+
+
+const testimonial_text_1 = 'Be aggressive with an idea, problem, or mistake that you want to make right. If you don\'t have enough passion from the beginning, you\'ll never make it to the end.';
+const testimonial_text_2 = 'I always wear glasses every day. Because if you take off your glasses, the world is a flat surface. 30 meters away, man and woman as one. 50 meters away, people and things have no distinction.';
+const testimonial_text_3 = 'Even without glasses, I can still see in the sea of people. And if you wear more glasses, even if I sit next to you. You don\'t see me either.';
+const testimonial_text_4 = 'When I long for the world, I will wear glasses to see it clearly. When I\'m frustrated with the world, I take off my glasses to simplify things.';
+
+var text = document.getElementById('testimonial-text');
+function testimonial_text(tes_text){
+    text.innerText = tes_text;
+}

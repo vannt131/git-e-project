@@ -33,12 +33,6 @@ $(document).ready(function (){
         $('.tab-content div').removeClass('tab-active');
         $('.description-content').addClass('tab-active');
     });
-    $('.product-details').click(function (){
-        $('.tab div').removeClass('tab-nav-active');
-        $(this).addClass('tab-nav-active');
-        $('.tab-content div').removeClass('tab-active');
-        $('.details-content').addClass('tab-active');
-    });
     $('.attachments').click(function (){
         $('.tab div').removeClass('tab-nav-active');
         $(this).addClass('tab-nav-active');

@@ -159,10 +159,10 @@ ul li{
     margin: 0;
     font-size: 10px;
 }
-.list-products a{
+.product-name{
     color: #242424;
 }
-.list-products a:hover{
+.product-name:hover{
     color: #ed0f0f;
     transition: all 200ms;
 }
@@ -195,15 +195,26 @@ ul li{
     display: flex;
     margin: 0 0 40px;
 }
-.product-infor .add-cart a{
+.buy-now, .add-cart{
     display: inline-block;
+    margin: 20px 20px 20px 0;
+}
+.buy-now a{
     color: #ffffff;
     background: #ed0f0f;
-    padding: 10px 50px;
+    padding: 10px 60px;
+    transition: all 300ms ease-in-out;
 }
-.product-infor .add-cart a:hover{
+.add-cart a{
+    color: #ffffff;
+    background: #e74c3c;
+    padding: 10px 60px;
+    transition: all 300ms ease-in-out;
+}
+.buy-now a:hover, .add-cart a:hover{
     background: #242424;
 }
+
 
 .grid-list-active{
     display: block;

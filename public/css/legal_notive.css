@@ -1,4 +1,4 @@
-*{
+{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -73,4 +73,22 @@ ul li{
     float: none;
     max-width: 1400px;
     margin: 0 auto 100px auto;
+}
+.right-legal{
+    width: 75%;
+    margin-left: 125px;
+}
+.nd_legal{
+    font-size: 18px;
+    line-height: 2;
+    font-weight: 400;
+    margin: 0 15px 30px 15px;
+}
+.nd_legal h2{
+    margin-bottom: 30px;
+    border-bottom: 5px solid black;
+    font-size: 30px;
+}
+.ct-ul{
+    list-style: circle;
 }

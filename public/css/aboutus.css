@@ -94,3 +94,32 @@ ul li{
 .achievements{
     display: inline-block;
 }
+.history{
+    float: none;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+.history h3{
+    font-size: 30px;
+    margin: 20px 0 20px 0;
+}
+.history p {
+    font-size: 20px;
+    margin: 30px 0 25px 0;
+    border: 1px solid #cccccc;
+}
+.gt{
+    float: none;
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+}
+.gt-left{
+    width: 50%;
+    text-align: left;
+}
+.gt-right{
+    width: 50%;
+    padding-top: 50px;
+    text-align: right;
+}

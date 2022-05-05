@@ -100,13 +100,14 @@ ul li{
     border-bottom: 1px solid #ccc;
 }
 .history h3{
-    font-size: 30px;
-    margin: 20px 0 20px 0;
+    font-size: 25px;
+    margin: 50px 0 15px 0;
+    text-decoration: underline;
 }
 .history p {
-    font-size: 20px;
+    font-size: 18px;
     margin: 30px 0 25px 0;
-    border: 1px solid #cccccc;
+    text-align: left;
 }
 .gt{
     float: none;

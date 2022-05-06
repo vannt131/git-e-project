@@ -113,3 +113,6 @@ app.get("/wishlist",function (req,res){
 app.get("/terms-and-conditions",function (req,res){
     res.render("terms_and_conditions");
 })
+app.get("/security-notifications",function (req,res){
+    res.render("security_notifications");
+})

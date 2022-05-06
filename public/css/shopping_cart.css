@@ -104,12 +104,8 @@ ul li{
     display: inline-block;
 }
 
-.product-infor .star i{
-    font-size: 10px;
-    margin: 0 0 10px;
-}
 .product-infor h4{
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 

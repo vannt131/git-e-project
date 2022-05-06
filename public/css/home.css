@@ -222,9 +222,8 @@ span#btn-next{
     margin-right: auto;
     max-width: 1400px;
 }
-.new-products .star i{
-    margin: 20px 0 10px;
-    font-size: 10px;
+.new-products .products{
+    display: flex;
 }
 .new-products a:hover{
     color: #ed0f0f;
@@ -315,9 +314,8 @@ span#btn-next{
     margin-right: auto;
     max-width: 1400px;
 }
-.featured-products .star i{
-    margin: 20px 0 10px;
-    font-size: 10px;
+.featured-products .products{
+    display: flex;
 }
 .featured-products a:hover{
     color: #ed0f0f;

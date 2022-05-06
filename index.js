@@ -13,7 +13,7 @@ const conn = mysql.createConnection({
     port: "3306",
     user: "root",
     password: "",
-    database: "t2111e",
+    database: "db_eproject_ki_1",
     multipleStatements: true
 });
 
@@ -28,8 +28,46 @@ app.get("/",function (req,res){
 })
 
 app.get("/products",function (req,res){
-    res.render("products");
+    const sql_txt = "select * from products";
+    conn.query(sql_txt,function (err,result){
+        if (err) res.render(err.message)
+        else if (result.length > 0){
+            res.render("products", {
+                products: result
+            })
+        }
+    else res.send("404 Not found");
+    });
 })
+
+app.get("/ladies-glasses",function (req,res){
+    const sql_txt = "select * from products where UserObject like 'All' or UserObject like 'Women'";
+    conn.query(sql_txt,function (err,result){
+        if (err) res.render(err.message)
+        else if (result.length > 0){
+            res.render("display_glasses", {
+                title_products : "Ladies glasses",
+                display_products: result
+            })
+        }
+        else res.send("404 Not found");
+    });
+})
+app.get("/men-glasses",function (req,res){
+    const sql_txt = "select * from products where UserObject like 'All' or UserObject like 'Men'";
+    conn.query(sql_txt,function (err,result){
+        if (err) res.render(err.message)
+        else if (result.length > 0){
+            res.render("display_glasses", {
+                title_products : "Men's glasses",
+                display_products: result
+            })
+        }
+        else res.send("404 Not found");
+    });
+})
+
+
 
 app.get("/products/detail-product",function (req,res){
     res.render("detail_product");
@@ -65,7 +103,7 @@ app.get("/account-forgot-password",function (req,res){
 })
 
 app.get("/search-results",function (req,res){
-    res.render("search_results");
+    res.render("display_glasses");
 })
 
 app.get("/wishlist",function (req,res){

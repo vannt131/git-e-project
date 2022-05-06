@@ -41,17 +41,17 @@
                                   </li>
                                   <li class="list-group-item">
                                       <div class="checkbox">
-                                          <label><input type="checkbox" value="">100$ - 200$</label>
+                                          <label><input type="checkbox" value="">100$ - 150$</label>
                                       </div>
                                   </li>
                                   <li class="list-group-item">
                                       <div class="checkbox">
-                                          <label><input type="checkbox" value="">200$ - 600$</label>
+                                          <label><input type="checkbox" value="">150$ - 200$</label>
                                       </div>
                                   </li>
                                   <li class="list-group-item">
                                       <div class="checkbox">
-                                          <label><input type="checkbox" value=""> > 600$</label>
+                                          <label><input type="checkbox" value=""> > 200$</label>
                                       </div>
                                   </li>
                               </ul>
@@ -113,11 +113,6 @@
                                           <label><input type="checkbox" value="">Gray</label>
                                       </div>
                                   </li>
-                                  <li class="list-group-item">
-                                      <div class="checkbox">
-                                          <label><input type="checkbox" value="">Black</label>
-                                      </div>
-                                  </li>
                               </ul>
                           </div>
                       </div>
@@ -146,87 +141,21 @@
                   </div>
               </div>
               <div class="box-product col-md-8">
-                  <div class="product-item col-md-3">
-                      <a href="/products/detail-product"><img src="https://demo.codezeel.com/prestashop/PRS18/PRS180433/img/p/2/4/24-home_default.jpg" alt=""></a>
-                      <div class="star" style="color: yellow" >
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
+                  <% for (var i=0; i<products.length; i++){ %>
+                      <div class="product-item col-md-3" style="text-align: center">
+                          <a href="/products/detail-product"><img src="<%= products[i].ProductImage %>" alt=""></a>
+                          <div class="star" style="color: #ff7f50">
+                              <h4><%= products[i].Value %>/10</h4>
+                          </div>
+                          <h4><a href="/products/detail-product"><%= products[i].ProductName %></a></h4>
+                          <h3><span style="text-decoration: line-through;opacity: 0.8;margin-right: 10px"><%= products[i].Price %>$</span><span style="color: #ed0f0f"><%= products[i].PriceSale %>$</span></h3>
+                          <div class="outer">
+                              <a href="/wishlish"><i class="fa fa-heart"></i></a>
+                              <a href="/products/detail-product"><i class="fa fa-eye"></i></a>
+                              <a href="/products/detail-product"><i class="fa fa-shopping-bag"></i></a>
+                          </div>
                       </div>
-                      <h4><a href="/products/detail-product">Roadies Rd-202 Round Protection</a></h4>
-                      <h3 style="color: #ed0f0f">$56.12</h3>
-                      <div class="outer">
-                          <a href="/wishlish"><i class="fa fa-heart"></i></a>
-                          <a href="/products/detail-product"><i class="fa fa-eye"></i></a>
-                          <a href="/products/detail-product"><i class="fa fa-shopping-bag"></i></a>
-                      </div>
-                  </div><div class="product-item col-md-3">
-                      <a href="/products/detail-product"><img src="https://demo.codezeel.com/prestashop/PRS18/PRS180433/img/p/2/4/24-home_default.jpg" alt=""></a>
-                      <div class="star" style="color: yellow" >
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                      </div>
-                      <h4><a href="/products/detail-product">Roadies Rd-202 Round Protection</a></h4>
-                      <h3 style="color: #ed0f0f">$56.12</h3>
-                      <div class="outer">
-                          <a href="/wishlish"><i class="fa fa-heart"></i></a>
-                          <a href="/products/detail-product"><i class="fa fa-eye"></i></a>
-                          <a href="/products/detail-product"><i class="fa fa-shopping-bag"></i></a>
-                      </div>
-                  </div><div class="product-item col-md-3">
-                      <a href="/products/detail-product"><img src="https://demo.codezeel.com/prestashop/PRS18/PRS180433/img/p/2/4/24-home_default.jpg" alt=""></a>
-                      <div class="star" style="color: yellow" >
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                      </div>
-                      <h4><a href="/products/detail-product">Roadies Rd-202 Round Protection</a></h4>
-                      <h3 style="color: #ed0f0f">$56.12</h3>
-                      <div class="outer">
-                          <a href="/wishlish"><i class="fa fa-heart"></i></a>
-                          <a href="/products/detail-product"><i class="fa fa-eye"></i></a>
-                          <a href="/products/detail-product"><i class="fa fa-shopping-bag"></i></a>
-                      </div>
-                  </div><div class="product-item col-md-3">
-                      <a href="/products/detail-product"><img src="https://demo.codezeel.com/prestashop/PRS18/PRS180433/img/p/2/4/24-home_default.jpg" alt=""></a>
-                      <div class="star" style="color: yellow" >
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                      </div>
-                      <h4><a href="/products/detail-product">Roadies Rd-202 Round Protection</a></h4>
-                      <h3 style="color: #ed0f0f">$56.12</h3>
-                      <div class="outer">
-                          <a href="/wishlish"><i class="fa fa-heart"></i></a>
-                          <a href="/products/detail-product"><i class="fa fa-eye"></i></a>
-                          <a href="/products/detail-product"><i class="fa fa-shopping-bag"></i></a>
-                      </div>
-                  </div><div class="product-item col-md-3">
-                      <a href="/products/detail-product"><img src="https://demo.codezeel.com/prestashop/PRS18/PRS180433/img/p/2/4/24-home_default.jpg" alt=""></a>
-                      <div class="star" style="color: yellow" >
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                      </div>
-                      <h4><a href="/products/detail-product">Roadies Rd-202 Round Protection</a></h4>
-                      <h3 style="color: #ed0f0f">$56.12</h3>
-                      <div class="outer">
-                          <a href="/wishlish"><i class="fa fa-heart"></i></a>
-                          <a href="/products/detail-product"><i class="fa fa-eye"></i></a>
-                          <a href="/products/detail-product"><i class="fa fa-shopping-bag"></i></a>
-                      </div>
-                  </div>
+                  <% } %>
               </div>
           </section>
       </section>

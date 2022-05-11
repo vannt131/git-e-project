@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eyeonic - Radius website</title>
+
+    <%- include("stylesheet.ejs") %>
+    <link rel="stylesheet" href="/css/display_glasses.css">
+</head>
+<body>
+<%- include("header.ejs") %>
+<section class="section">
+    <div class="breadcrumb">
+        <h3>Ladies glasses</h3>
+        <ul class="menu-item">
+            <li><a href="/products">Products</a></li>
+            <li>Ladies glasses</li>
+        </ul>
+    </div>
+    <div class="product-wrp">
+        <div class="product-selection">
+            <div class=" col-md-6">
+                <div class="grid-list">
+                    <ul>
+                        <li id="grid" class="selected">Grid <i class="fa-solid fa-grid-4"></i></li>
+                        <li id="list">List</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sort-by-row col-md-6">
+                <h4>Sort by:</h4>
+                <form action="">
+                    <select name="sort" id="select-sort" onchange="javascript:handleSelect(this)">
+                        <option value="">Select</option>
+                        <option value="/ladies-glasses/sort-name?name=asc">Name, A to Z</option>
+                        <option value="/ladies-glasses/sort-name?name=desc">Name, Z to A</option>
+                        <option value="/ladies-glasses/sort-price?price=asc">Price, low to high</option>
+                        <option value="/ladies-glasses/sort-price?price=desc">Price, high to low</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <div class="product-results">
+            <div class="grid-products grid-list-active">
+                <% for (var i=0; i<data_ladies.length; i++){ %>
+                    <div class="col-md-3">
+                        <a href="/products/detail-product?id=<%= data_ladies[i].ID %>"><img src="<%= data_ladies[i].ProductImage %>" alt=""></a>
+                        <div class="evalue" style="color: #ff7f50" >
+                            <h3><%= data_ladies[i].Value %>/10</h3>
+                        </div>
+                        <h4><a href="/products/detail-product?id=<%= data_ladies[i].ID %>" class="product-name"><%= data_ladies[i].ProductName %></a></h4>
+                        <h3><span style="text-decoration: line-through;opacity: 0.8;margin-right: 10px"><%= data_ladies[i].Price %>$</span><span style="color: #ed0f0f"><%= data_ladies[i].PriceSale %>$</span></h3>
+                        <div class="outer">
+                            <a href="/wishlish"><i class="fa fa-heart" title="Add to wishlish"></i></a>
+                            <a href="/products/detail-product?id=<%= data_ladies[i].ID %>" title="Product information"><i class="fa fa-eye"></i></a>
+                            <a href="/shoppingcart"><i class="fa fa-shopping-bag" title="Add to cart"></i></a>
+                        </div>
+                    </div>
+                <% } %>
+            </div>
+            <div class="list-products">
+                <% for (var i=0; i<data_ladies.length; i++){ %>
+                    <div class="list-product-item">
+                        <div class="product-img col-md-3">
+                            <a href="/products/detail-product?id=<%= data_ladies[i].ID %>"><img src="<%= data_ladies[i].ProductImage %>" alt=""></a>
+                        </div>
+                        <div class="product-infor col-md-9">
+                            <div class="star" style="color: #ff7f50" >
+                                <h3><%= data_ladies[i].Value %>/10</h3>
+                            </div>
+                            <h4><a href="/products/detail-product?id=<%= data_ladies[i].ID %>" class="product-name"><%= data_ladies[i].ProductName %></a></h4>
+                            <h3><span style="text-decoration: line-through;opacity: 0.8;margin-right: 10px"><%= data_ladies[i].Price %>$</span><span style="color: #ed0f0f"><%= data_ladies[i].PriceSale %>$</span></h3>
+                            <div><%= data_ladies[i].Property %></div>
+                            <div>
+                                <div class="buy-now">
+                                    <h4><a href="/check-out">BUY NOW</a></h4>
+                                </div>
+                                <div class="add-cart">
+                                    <h4><a href="/shopping-cart">ADD TO CART</a></h4>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="add-wishlish">
+                                    <a href=""><i class="fa fa-heart"></i>
+                                        Add to wishlish</a>
+                                </div>
+                                <div class="share">
+                                    <a href=""><i class="fa fa-share-alt"></i>
+                                        Share with others</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</section>
+<%- include("footer.ejs") %>
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/js_all.js"></script>
+<script type="text/javascript" src="/js/display_products.js"></script>
+</body>
+</html>

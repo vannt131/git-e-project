@@ -14,7 +14,8 @@
 }
 
 .new-products-block{
-    border: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
 }
 .new-products-block .title-block{
     background: #ccc;
@@ -23,7 +24,8 @@
 }
 .product-item{
     display: flex;
-    margin: 20px 0;
+    margin: 20px 0 0;
+    border-bottom: 1px solid #ccc;
 }
 .product-item .star i{
     font-size: 10px;

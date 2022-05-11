@@ -29,7 +29,7 @@
     float: left;
     display: flex;
     opacity: 0.9;
-    padding: 35px 100px 0 20px;
+    padding: 35px 50px 0 20px;
 }
 .fix-header .logo{
     padding: 20px 100px 0 20px;
@@ -101,10 +101,10 @@ ul{
 #nav li:hover .subnav{
     display: block;
     animation-name: subnav-animation;
-    animation-duration: 0.5s;
+    animation-duration: 400ms;
 }
 @keyframes subnav-animation {
-    from{display: none;top: 30px;}
+    from{display: none;top: 25px;}
     to{display: block;top: 40px;}
 }
 #nav .subnav a{
@@ -123,72 +123,48 @@ ul{
 }
 #nav .subnav li:hover a{
     color: #ed0f0f;
-    padding-left: 30px;
+    padding-left: 25px;
+    transform: scale(1.1);
     transition: all 500ms;
 }
 
 .icon-menu{
-    margin-left: 100px;
+    margin-top: 5px;
 }
 .icon-menu a:hover, .fa-search:hover{
     color: #ed0f0f;
     cursor: pointer;
 }
 
-.icon-menu .fa{
+.icon-menu a .fa{
     font-size: 20px;
     margin: 20px 10px;
-}
-.fa-times{
-    padding: 0 3px;
-}
-.fa-times:hover{
-    color: #ed0f0f;
-    cursor: pointer;
-
 }
 
 .count{
     color: #ffffff;
     background-color: #ed0f0f;
     padding: 2px 5px;
-    margin-left: -10%;
+    margin-left: -5%;
     border-radius: 10px;
 }
 
 .search-btn{
-    display: none;
-    position: absolute;
-    top: 120px;
-    right: 250px;
-    width: 240px;
-    height: 55px;
+    display: inline-block;
     background: #ffffff;
-    z-index: 100;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    border: 1px solid #ccc;
-    animation-name: search-btn-animation;
-    animation-duration: 0.2s;
+    border: 1px solid #242424;
+    border-radius: 10px;
 }
-.fix-header .search-btn{
-    top: 90px;
-}
-@keyframes search-btn-animation {
-    from{top: 110px;right: 230px}
-    to{top: 120px;right: 250px}
-}
-.search-btn-show{
-    display: block;
-}
-.search-input{
+
+#search-input{
+    padding: 10px;
     border: 0;
     outline: 0;
-    padding-left: 20px;
+    border-radius: 10px;
 }
 
 .search-btn i{
-    padding: 15px;
-    margin: 0;
+    padding: 10px;
 }
 .search-btn .fa-search{
     font-size: 20px;

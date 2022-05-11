@@ -56,40 +56,42 @@
         </div>
         <div class="brand">
             <div class="col-md-2">
-                <a href=""><img src="https://www.dangquangwatch.vn/view/pic/DiamondD.jpg" alt=""></a>
+                <a href="/brand?brand=Diamond D"><img src="https://www.dangquangwatch.vn/view/pic/DiamondD.jpg" alt=""></a>
             </div>
             <div class="col-md-2">
-                <a href=""><img src="https://www.dangquangwatch.vn/view/pic/PA.jpg" alt=""></a>
+                <a href="/brand?brand=Philippe Auguste"><img src="https://www.dangquangwatch.vn/view/pic/PA.jpg" alt=""></a>
             </div>
             <div class="col-md-2">
-                <a href=""><img src="https://www.dangquangwatch.vn/view/pic/rayban.jpg" alt=""></a>
+                <a href="/brand?brand=Ray Ban"><img src="https://www.dangquangwatch.vn/view/pic/rayban.jpg" alt=""></a>
             </div>
             <div class="col-md-2">
-                <a href=""><img src="https://www.dangquangwatch.vn/view/pic/Burberry1.jpg" alt=""></a>
+                <a href="/brand?brand=Burberry"><img src="https://www.dangquangwatch.vn/view/pic/Burberry1.jpg" alt=""></a>
             </div>
             <div class="col-md-2">
-                <a href=""><img src="https://www.dangquangwatch.vn/view/pic/Prada.jpg" alt=""></a>
+                <a href="/brand?brand=Prada"><img src="https://www.dangquangwatch.vn/view/pic/Prada.jpg" alt=""></a>
             </div>
             <div class="col-md-2">
-                <a href=""><img src="https://www.dangquangwatch.vn/view/pic/michaelkors.jpg" alt=""></a>
+                <a href="/brand?brand=Michael Kors"><img src="https://www.dangquangwatch.vn/view/pic/michaelkors.jpg" alt=""></a>
             </div>
         </div>
         <div class="new-products">
             <div style="margin: 100px 0 100px"><h1 class="text-center"><u>New Products</u></h1></div>
             <div class="products">
-                <div class="col-md-3">
-                    <a href=""><img src="https://demo.codezeel.com/prestashop/PRS18/PRS180433/img/p/2/4/24-home_default.jpg" alt=""></a>
-                    <div class="star" style="color: #ff7f50">
-                        <h3>9/10</h3>
+                <% for (var i=0; i<4; i++){ %>
+                    <div class="col-md-3">
+                        <a href="/products/detail-product?id=<%= data_prod_home[i].ID %>"><img src="<%= data_prod_home[i].ProductImage %>" alt=""></a>
+                        <div class="evalue" style="color: #ff7f50">
+                            <h4><%= data_prod_home[i].Value %>/10</h4>
+                        </div>
+                        <h4 class="prod-name"><a href="/products/detail-product?id=<%= data_prod_home[i].ID %>"><%= data_prod_home[i].ProductName %></a></h4>
+                        <h3><span style="text-decoration: line-through;opacity: 0.8;margin-right: 10px">$<%= data_prod_home[i].Price %></span><span style="color: #ed0f0f">$<%= data_prod_home[i].PriceSale %></span></h3>
+                        <div class="outer">
+                            <a href="/wishlish"><i class="fa fa-heart" title="Add to wishlish"></i></a>
+                            <a href="/products/detail-product?id=<%= data_prod_home[i].ID %>" title="Product information"><i class="fa fa-eye"></i></a>
+                            <a href="/shoppingcart"><i class="fa fa-shopping-bag" title="Add to cart"></i></a>
+                        </div>
                     </div>
-                    <h4><a href="">Roadies Rd-202 Round Protection</a></h4>
-                    <h3 style="color: #ed0f0f">$56.12</h3>
-                    <div class="outer">
-                        <a href=""><i class="fa fa-heart"></i></a>
-                        <a href=""><i class="fa fa-eye"></i></a>
-                        <a href=""><i class="fa fa-shopping-bag"></i></a>
-                    </div>
-                </div>
+                <% } %>
             </div>
         </div>
         <div class="banner">
@@ -140,19 +142,21 @@
         <div class="featured-products">
             <div><h1 class="text-center" style="margin: 100px 0 100px"><u>Featured Products</u></h1></div>
             <div class="products">
-                <div class="col-md-3">
-                    <img src="https://demo.codezeel.com/prestashop/PRS18/PRS180433/img/p/2/4/24-home_default.jpg" alt="">
-                    <div class="star" style="color: #ff7f50">
-                        <h3>9/10</h3>
+                <% for (var i=5; i<9; i++){ %>
+                    <div class="col-md-3">
+                        <a href="/products/detail-product?id=<%= data_prod_home[i].ID %>"><img src="<%= data_prod_home[i].ProductImage %>" alt=""></a>
+                        <div class="evalue" style="color: #ff7f50">
+                            <h4><%= data_prod_home[i].Value %>/10</h4>
+                        </div>
+                        <h4 class="prod-name"><a href="/products/detail-product?id=<%= data_prod_home[i].ID %>"><%= data_prod_home[i].ProductName %></a></h4>
+                        <h3><span style="text-decoration: line-through;opacity: 0.8;margin-right: 10px">$<%= data_prod_home[i].Price %></span><span style="color: #ed0f0f">$<%= data_prod_home[i].PriceSale %></span></h3>
+                        <div class="outer">
+                            <a href="/wishlish"><i class="fa fa-heart" title="Add to wishlish"></i></a>
+                            <a href="/products/detail-product?id=<%= data_prod_home[i].ID %>" title="Product information"><i class="fa fa-eye"></i></a>
+                            <a href="/shoppingcart"><i class="fa fa-shopping-bag" title="Add to cart"></i></a>
+                        </div>
                     </div>
-                    <h4><a href="">Roadies Rd-202 Round Protection</a></h4>
-                    <h3 style="color: #ed0f0f">$56.12</h3>
-                    <div class="outer">
-                        <a href=""><i class="fa fa-heart"></i></a>
-                        <a href=""><i class="fa fa-eye"></i></a>
-                        <a href=""><i class="fa fa-shopping-bag"></i></a>
-                    </div>
-                </div>
+                <% } %>
             </div>
         </div>
         <div class="box" style="display: block;margin-top: 200px">

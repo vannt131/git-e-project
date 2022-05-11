@@ -215,43 +215,56 @@ span#btn-next{
     border-bottom: 1px solid #dad5d5;
 }
 
-.new-products{
+.new-products, .featured-products{
     display: block;
     float: none;
     margin-left: auto;
     margin-right: auto;
     max-width: 1400px;
 }
-.new-products .products{
+.new-products .products, .featured-products .products{
     display: flex;
+    text-align: center;
 }
-.new-products a:hover{
+.new-products .products .col-md-3, .featured-products .products .col-md-3{
+
+}
+.new-products .col-md-3:hover, .featured-products .col-md-3:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.new-products .col-md-3:hover .prod-name a, .featured-products .col-md-3:hover .prod-name a{
     color: #ed0f0f;
-    transition: all 200ms;
 }
-.new-products img{
+.new-products img, .featured-products img{
     position: relative;
+    height: 300px;
 }
-.outer{
+.new-products .outer, .featured-products .outer{
     position: absolute;
     right: 0;
-    bottom: 130px;
+    bottom: 170px;
     opacity: 0;
-    transition: all 500ms ease-in-out;
+    transition: all 300ms ease-in-out;
 }
-.outer i{
+.new-products .outer i, .featured-products .outer i{
     display: block;
+    font-size: 20px;
     padding: 10px;
-    background-color: white;
+    margin: 20px 10px 0;
+    background-color: #f7f1e3;
     cursor: pointer;
 }
 .outer i:hover{
     color: #ed0f0f;
 }
-.new-products .col-md-3:hover .outer{
+.new-products .col-md-3:hover .outer, .featured-products .col-md-3:hover .outer{
     opacity: 1;
     right: 10px;
 }
+.new-products .prod-name, .featured-products .prod-name{
+    height: 40px;
+}
+
 
 .banner{
     float: none;
@@ -308,44 +321,7 @@ span#btn-next{
     transition: all 500ms;
 }
 
-.featured-products{
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1400px;
-}
-.featured-products .products{
-    display: flex;
-}
-.featured-products a:hover{
-    color: #ed0f0f;
-    transition: all 200ms;
-}
-.featured-products img{
-    position: relative;
-}
-.outer{
-    position: absolute;
-    right: 0;
-    bottom: 130px;
-    opacity: 0;
-    transition: all 300ms ease-in-out;
-}
-.outer i{
-    font-size: 20px;
-    display: flex;
-    padding: 10px;
-    margin: 20px 10px;
-    background-color: white;
 
-}
-.outer i:hover{
-    color: #ed0f0f;
-}
-.featured-products .col-md-3:hover .outer{
-    opacity: 1;
-    right: 10px;
-}
 
 .testimonial{
     display: block;

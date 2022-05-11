@@ -24,24 +24,25 @@
                     <tr class="title">
                         <th><h4>Product</h4></th>
                         <th><h4>Unit Price</h4></th>
-                        <th><h4>Amount</h4></th>
+                        <th><h4>Quantity</h4></th>
                         <th><h4>Total</h4></th>
                         <th><h4>Operation</h4></th>
                     </tr>
                 </thead>
                 <tbody>
+                <% for (var i=0; i<products_cart.length; i++){ %>
                     <tr class="product">
                         <td>
                             <div class="product-img col-md-4">
-                                <a href=""><img src="https://demo.codezeel.com/prestashop/PRS18/PRS180433/img/p/2/4/24-home_default.jpg" alt=""></a>
+                                <a href="/products/detail-product?id=<%= products_cart[i].IDProduct %>"><img src="<%= products_cart[i].CartProductImage %>" alt=""></a>
                             </div>
                             <div class="product-infor col-md-8">
-                                <h4><a href="">Roadies Rd-202 Round Protection</a></h4>
+                                <h4><a href="/products/detail-product?id=<%= products_cart[i].IDProduct %>"><%= products_cart[i].CartProductName %></a></h4>
                             </div>
                         </td>
                         <td>
                             <div class="product-price">
-                                <h3>$68.00</h3>
+                                <h3>$<%= products_cart[i].CartProductPrice %></h3>
                             </div>
                         </td>
                         <td>
@@ -53,13 +54,14 @@
                         </td>
                         <td>
                             <div class="product-price">
-                                <h3>$136.00</h3>
+                                <h3>$<span id="total-product"><%= products_cart[i].CartProductPrice %></span></h3>
                             </div>
                         </td>
                         <td>
                             <div class="delete">X</div>
                         </td>
                     </tr>
+                <% } %>
                 </tbody>
             </table>
     </div>
@@ -76,7 +78,7 @@
         <div class="total">
             <div class="checkout">
                 <div>
-                    <h4>Total payment(0 product): <span style="color: #ed0f0f">$0</span></h4>
+                    <h4>Total payment(2 product): <span style="color: #ed0f0f">$248.40<h4 id="total-payment"></h4></span></h4>
                 </div>
                 <div>
                     <h3><a href="/check-out">Checkout</a></h3>

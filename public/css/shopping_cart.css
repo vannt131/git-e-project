@@ -106,20 +106,21 @@ ul li{
 }
 
 .product-infor h4{
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 
 
 .product .product-price{
     color: #ed0f0f;
-    padding: 10px 0 0 20px;
+    padding: 10px 0 0 5px;
 }
 
 .product .delete{
     font-weight: 900;
     opacity: 0.8;
     padding: 30px;
+    margin-left: 20px;
 }
 .delete:hover{
     color: #ed0f0f;

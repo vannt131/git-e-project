@@ -11,10 +11,10 @@
 <%- include("header.ejs") %>
       <section class= "section">
           <div class="breadcrumb">
-              <h3>Products</h3>
+              <h3><%= title %></h3>
               <ul class="menu-item">
                   <li><a href="/">Home</a></li>
-                  <li>Products</li>
+                  <li><%= title %></li>
               </ul>
           </div>
           <section id="products">
@@ -143,12 +143,12 @@
               <div class="box-product col-md-8">
                   <% for (var i=0; i<products.length; i++){ %>
                       <div class="product-item col-md-3" style="text-align: center">
-                          <a href="/products/detail-product"><img src="<%= products[i].ProductImage %>" alt=""></a>
-                          <div class="star" style="color: #ff7f50">
+                          <a href="/products/detail-product?id=<%= products[i].ID %>"><img src="<%= products[i].ProductImage %>" alt=""></a>
+                          <div class="evalue" style="color: #ff7f50">
                               <h4><%= products[i].Value %>/10</h4>
                           </div>
-                          <h4><a href="/products/detail-product"><%= products[i].ProductName %></a></h4>
-                          <h3><span style="text-decoration: line-through;opacity: 0.8;margin-right: 10px"><%= products[i].Price %>$</span><span style="color: #ed0f0f"><%= products[i].PriceSale %>$</span></h3>
+                          <h4 class="product-name"><a href="/products/detail-product"><%= products[i].ProductName %></a></h4>
+                          <h3><span style="text-decoration: line-through;opacity: 0.8;margin-right: 10px">$<%= products[i].Price %></span><span style="color: #ed0f0f">$<%= products[i].PriceSale %></span></h3>
                           <div class="outer">
                               <a href="/wishlish"><i class="fa fa-heart"></i></a>
                               <a href="/products/detail-product"><i class="fa fa-eye"></i></a>

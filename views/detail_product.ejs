@@ -11,24 +11,24 @@
 <%- include("header.ejs") %>
 <section class="section">
     <div class="breadcrumb">
-        <h3>Roadies Rd-202 Round Protection</h3>
+        <h3><%= product.ProductName %></h3>
         <ul class="menu-item">
             <li><a href="/products">Products</a></li>
-            <li>Roadies Rd-202 Round Protection</li>
+            <li><%= product.ProductName %></li>
         </ul>
     </div>
     <div class="product-container">
         <div class="product-content">
             <div class="product-img col-md-6">
-                <img src="https://demo.codezeel.com/prestashop/PRS18/PRS180433/img/p/2/4/24-large_default.jpg" alt="">
+                <img src="<%= product.ProductImage %>" alt="">
                 <div class="sub-img"></div>
             </div>
             <div class="product-information col-md-6">
                 <div class="star" style="color: #ff7f50">
-                    <h3>Assess: 9/10</h3>
+                    <h3>Assess: <%= product.Value %>/10</h3>
                 </div>
-                <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
-                <h4>Available In Stock: <span style="color: #5cb85c;">998 items</span></h4>
+                <p class="description"><%= product.Description %></p>
+                <h4>Available In Stock: <span style="color: #5cb85c;"><%= product.Quantity %> items</span></h4>
                 <div class="product-size">
                     <p>Size:</p>
                     <select name="size" id="size">
@@ -43,7 +43,7 @@
                     <div class="color-item" style="background: #2aabd2;"></div>
                     <div class="color-item" style="background: #5cb85c;"></div>
                 </div>
-                <h2><span style="text-decoration: line-through;opacity: 0.8;margin-right: 10px">64.00$</span><span style="color: #ed0f0f">58.88$</span></h2>
+                <h2><span style="text-decoration: line-through;opacity: 0.8;margin-right: 10px">$<%= product.Price %></span><span style="color: #ed0f0f">$<%= product.PriceSale %></span></h2>
                 <div class="buttons_added">
                     <input class="minus is-form" type="button" value="-">
                     <input aria-label="quantity" class="input-qty" max="99" min="1" name="" type="number" value="1">
@@ -71,21 +71,44 @@
         </div>
         <div class="product-tab">
             <div class="tab">
-                <div class="tab-nav description tab-nav-active"><h4>Description</h4></div>
-                <div class="tab-nav attachments"><h4>Attachments</h4></div>
+                <div class="tab-nav description tab-nav-active"><h3>Description</h3></div>
+                <div class="tab-nav attachments"><h3>Attachments</h3></div>
             </div>
             <div class="tab-content">
-                <div class="description-content tab-active">Symbol of lightness and delicacy, the hummingbird evokes curiosity and joy. Studio Design' PolyFaune collection features classic products with colorful patterns, inspired by the traditional japanese origamis. To wear with a chino or jeans. The sublimation textile printing process provides an exceptional color rendering and a color, guaranteed overtime.
-
-                    Fashion has been creating well-designed collections since 2010. The brand offers feminine designs delivering stylish separates and statement dresses which has since evolved into a full ready-to-wear collection in which every item is a vital part of a woman's wardrobe. The result? Cool, easy, chic looks with youthful elegance.
-
-                    Contrary to popular belief, Lorem Ipsum is not simply random text.
-
-                    Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</div>
+                <div class="description-content tab-active">
+                    <div>
+                        <h4>Brand:</h4>
+                        <p><%= product.BrandName %></p>
+                    </div>
+                    <div>
+                    <h4>Product's name:</h4>
+                    <p><%= product.ProductName %></p>
+                </div>
+                    <div>
+                        <h4>Description:</h4>
+                        <p><%= product.Description %></p>
+                    </div>
+                    <div>
+                        <h4>User Object:</h4>
+                        <p><%= product.UserObject %></p>
+                    </div>
+                    <div>
+                        <h4>Style:</h4>
+                        <p><%= product.Style %></p>
+                    </div>
+                    <div>
+                        <h4>Composition:</h4>
+                        <p><%= product.Composition %></p>
+                    </div>
+                    <div>
+                        <h4>Property:</h4>
+                        <p><%= product.Property %></p>
+                    </div>
+                </div>
                 <div class="attachments-content">
                     <p>DOWNLOAD Product Details
                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                    <a href="">Download (00.99KB)</a>
+                    <a href="#" download="">Download (99.99KB)</a>
                 </div>
             </div>
         </div>
@@ -94,125 +117,97 @@
         <h1 class="text-center" style="margin: 100px 0 100px"><u>You Might Also Like</u></h1>
         <div class="products">
             <div class="col-md-3">
-                <a href=""><img src="https://demo.codezeel.com/prestashop/PRS18/PRS180433/img/p/2/4/24-home_default.jpg" alt=""></a>
-                <div class="star" style="color: yellow" >
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
+                <a href="/products/detail-product?id=1"><img src="https://www.dangquangwatch.vn/upload/product/1622063159_kinhmatthoitrang27.jpg" alt=""></a>
+                <div class="evalue" style="color: #ff7f50">
+                    <h4>9/10</h4>
                 </div>
-                <h4><a href="">Roadies Rd-202 Round Protection</a></h4>
-                <h3 style="color: #ed0f0f">$56.12</h3>
+                <h4 class="prod-name"><a href="/products/detail-product?id=1">Diamond D DM-T-29292-57/C5</a></h4>
+                <h3><span style="text-decoration: line-through;opacity: 0.8;margin-right: 10px">$142.68</span><span style="color: #ed0f0f">$128.41</span></h3>
                 <div class="outer">
-                    <a href=""><i class="fa fa-heart"></i></a>
-                    <a href=""><i class="fa fa-eye"></i></a>
-                    <a href=""><i class="fa fa-shopping-bag"></i></a>
+                    <a href=""><i class="fa fa-heart" title="Add to wishlish"></i></a>
+                    <a href="/products/detail-product?id=1" title="Product information"><i class="fa fa-eye"></i></a>
+                    <a href=""><i class="fa fa-shopping-bag" title="Add to cart"></i></a>
                 </div>
             </div>
             <div class="col-md-3">
-                <a href=""><img src="https://demo.codezeel.com/prestashop/PRS18/PRS180433/img/p/1/2/0/120-home_default.jpg" alt=""></a>
-                <div class="star" style="color: gray" >
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
+                <a href="/products/detail-product?id=2"><img src="https://www.dangquangwatch.vn/upload/product/170964307_KINH-MAT-THOI-TRANG-21.jpg" alt=""></a>
+                <div class="evalue" style="color: #ff7f50">
+                    <h4>8/10</h4>
                 </div>
-                <h4><a href="">Hippie carnival glasses orange</a></h4>
-                <h3 style="color: #ed0f0f">$47.00</h3>
+                <h4 class="prod-name"><a href="/products/detail-product?id=2">DIAMOND D DM-29237-52/C22</a></h4>
+                <h3><span style="text-decoration: line-through;opacity: 0.8;margin-right: 10px">$142.01</span><span style="color: #ed0f0f">$114.50</span></h3>
                 <div class="outer">
-                    <a href=""><i class="fa fa-heart"></i></a>
-                    <a href=""><i class="fa fa-eye"></i></a>
-                    <a href=""><i class="fa fa-shopping-bag"></i></a>
+                    <a href=""><i class="fa fa-heart" title="Add to wishlish"></i></a>
+                    <a href="/products/detail-product?id=2" title="Product information"><i class="fa fa-eye"></i></a>
+                    <a href=""><i class="fa fa-shopping-bag" title="Add to cart"></i></a>
                 </div>
             </div>
             <div class="col-md-3">
-                <a href=""><img src="https://demo.codezeel.com/prestashop/PRS18/PRS180433/img/p/1/0/7/107-home_default.jpg" alt=""></a>
-                <div class="star" style="color: yellow" >
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
+                <a href="/products/detail-product?id=3"><img src="https://www.dangquangwatch.vn/upload/product/1287845525_kinhmatthoitrang26.jpg" alt=""></a>
+                <div class="evalue" style="color: #ff7f50">
+                    <h4>9/10</h4>
                 </div>
-                <h4><a href="">Tinted hexagon oversized glass</a></h4>
-                <h3 style="color: #ed0f0f">$63.36</h3>
+                <h4 class="prod-name"><a href="/products/detail-product?id=3">Diamond D DM-T-29204-62/C22</a></h4>
+                <h3><span style="text-decoration: line-through;opacity: 0.8;margin-right: 10px">$140.99</span><span style="color: #ed0f0f">$129.09</span></h3>
                 <div class="outer">
-                    <a href=""><i class="fa fa-heart"></i></a>
-                    <a href=""><i class="fa fa-eye"></i></a>
-                    <a href=""><i class="fa fa-shopping-bag"></i></a>
+                    <a href=""><i class="fa fa-heart" title="Add to wishlish"></i></a>
+                    <a href="/products/detail-product?id=3" title="Product information"><i class="fa fa-eye"></i></a>
+                    <a href=""><i class="fa fa-shopping-bag" title="Add to cart"></i></a>
                 </div>
             </div>
             <div class="col-md-3">
-                <a href=""><img src="https://demo.codezeel.com/prestashop/PRS18/PRS180433/img/p/1/0/5/105-home_default.jpg" alt=""></a>
-                <div class="star" style="color: gray" >
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
+                <a href="/products/detail-product?id=8"><img src="https://www.dangquangwatch.vn/upload/product/78221398_367285873_kinh-mat-chinh-hang33.jpg" alt=""></a>
+                <div class="evalue" style="color: #ff7f50">
+                    <h4>8/10</h4>
                 </div>
-                <h4><a href="">Transparent frame wayfarer lens</a></h4>
-                <h3 style="color: #ed0f0f">$45.00</h3>
+                <h4 class="prod-name"><a href="/products/detail-product?id=8">PHILIPPE AUGUSTE PA555-001-O</a></h4>
+                <h3><span style="text-decoration: line-through;opacity: 0.8;margin-right: 10px">$154.88</span><span style="color: #ed0f0f">$114.50</span></h3>
                 <div class="outer">
-                    <a href=""><i class="fa fa-heart"></i></a>
-                    <a href=""><i class="fa fa-eye"></i></a>
-                    <a href=""><i class="fa fa-shopping-bag"></i></a>
+                    <a href=""><i class="fa fa-heart" title="Add to wishlish"></i></a>
+                    <a href="/products/detail-product?id=8" title="Product information"><i class="fa fa-eye"></i></a>
+                    <a href=""><i class="fa fa-shopping-bag" title="Add to cart"></i></a>
                 </div>
-            </div><div class="col-md-3">
-                <a href=""><img src="https://demo.codezeel.com/prestashop/PRS18/PRS180433/img/p/1/0/5/105-home_default.jpg" alt=""></a>
-                <div class="star" style="color: gray" >
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
+            </div>
+            <div class="col-md-3">
+                <a href="/products/detail-product?id=6"><img src="https://www.dangquangwatch.vn/upload/product/1567326006_kinh-mat-chinh-hang26.jpg" alt=""></a>
+                <div class="evalue" style="color: #ff7f50">
+                    <h4>9/10</h4>
                 </div>
-                <h4><a href="">Transparent frame wayfarer lens</a></h4>
-                <h3 style="color: #ed0f0f">$45.00</h3>
+                <h4 class="prod-name"><a href="/products/detail-product?id=6">PHILIPPE AUGUSTE PA555-007-D</a></h4>
+                <h3><span style="text-decoration: line-through;opacity: 0.8;margin-right: 10px">$134.50</span><span style="color: #ed0f0f">$121.05</span></h3>
                 <div class="outer">
-                    <a href=""><i class="fa fa-heart"></i></a>
-                    <a href=""><i class="fa fa-eye"></i></a>
-                    <a href=""><i class="fa fa-shopping-bag"></i></a>
+                    <a href=""><i class="fa fa-heart" title="Add to wishlish"></i></a>
+                    <a href="/products/detail-product?id=6" title="Product information"><i class="fa fa-eye"></i></a>
+                    <a href=""><i class="fa fa-shopping-bag" title="Add to cart"></i></a>
                 </div>
-            </div><div class="col-md-3">
-                <a href=""><img src="https://demo.codezeel.com/prestashop/PRS18/PRS180433/img/p/1/0/5/105-home_default.jpg" alt=""></a>
-                <div class="star" style="color: gray" >
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
+            </div>
+            <div class="col-md-3">
+                <a href="/products/detail-product?id=9"><img src="https://cdn2.jomashop.com/media/catalog/product/cache/fde19e4197824625333be074956e7640/r/a/ray-ban-light-brown-aviator-sunglasses-rb3689-001t255-rb3689-001t255.jpg?width=546&height=546" alt=""></a>
+                <div class="evalue" style="color: #ff7f50">
+                    <h4>10/10</h4>
                 </div>
-                <h4><a href="">Transparent frame wayfarer lens</a></h4>
-                <h3 style="color: #ed0f0f">$45.00</h3>
+                <h4 class="prod-name"><a href="/products/detail-product?id=9">RAY-BAN Light Brown Aviator Sunglasses RB3689 001/T255</a></h4>
+                <h3><span style="text-decoration: line-through;opacity: 0.8;margin-right: 10px">$191.99</span><span style="color: #ed0f0f">$119.99</span></h3>
                 <div class="outer">
-                    <a href=""><i class="fa fa-heart"></i></a>
-                    <a href=""><i class="fa fa-eye"></i></a>
-                    <a href=""><i class="fa fa-shopping-bag"></i></a>
+                    <a href=""><i class="fa fa-heart" title="Add to wishlish"></i></a>
+                    <a href="/products/detail-product?id=9" title="Product information"><i class="fa fa-eye"></i></a>
+                    <a href=""><i class="fa fa-shopping-bag" title="Add to cart"></i></a>
                 </div>
-            </div><div class="col-md-3">
-                <a href=""><img src="https://demo.codezeel.com/prestashop/PRS18/PRS180433/img/p/1/0/5/105-home_default.jpg" alt=""></a>
-                <div class="star" style="color: gray" >
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
+            </div>
+            <div class="col-md-3">
+                <a href="/products/detail-product?id=39"><img src="https://www.dangquangwatch.vn/upload/product/1798091143_1584434113_k%C3%ADnh-mk3.jpg" alt=""></a>
+                <div class="evalue" style="color: #ff7f50">
+                    <h4>10/10</h4>
                 </div>
-                <h4><a href="">Transparent frame wayfarer lens</a></h4>
-                <h3 style="color: #ed0f0f">$45.00</h3>
+                <h4 class="prod-name"><a href="/products/detail-product?id=39">Michael Kors MK-6013F-3020/11(57CN)</a></h4>
+                <h3><span style="text-decoration: line-through;opacity: 0.8;margin-right: 10px">$199.99</span><span style="color: #ed0f0f">$129.53</span></h3>
                 <div class="outer">
-                    <a href=""><i class="fa fa-heart"></i></a>
-                    <a href=""><i class="fa fa-eye"></i></a>
-                    <a href=""><i class="fa fa-shopping-bag"></i></a>
+                    <a href=""><i class="fa fa-heart" title="Add to wishlish"></i></a>
+                    <a href="/products/detail-product?id=39" title="Product information"><i class="fa fa-eye"></i></a>
+                    <a href=""><i class="fa fa-shopping-bag" title="Add to cart"></i></a>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="reviews">
-        <h1 class="text-center">Reviews</h1>
     </div>
 </section>
 <%- include("footer.ejs") %>

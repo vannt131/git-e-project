@@ -54,6 +54,7 @@ a{
 }
 .menu-item li:nth-child(2) {
     padding-left: 15px;
+    color: #ffffff;
 }
 .menu-item li:nth-child(1) {
     padding: 0px 15px 0px 0px;
@@ -101,9 +102,11 @@ ul li{
 
 
 .sort-by-row{
-    padding: 10px;
 }
 .sort-by-row h4{
+    display: inline-block;
+}
+.sort-by-row form{
     display: inline-block;
 }
 #select-sort{
@@ -127,9 +130,8 @@ ul li{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.grid-products .star i{
-    margin: 0;
-    font-size: 10px;
+.grid-products h4{
+    height: 50px;
 }
 .grid-products a{
     color: #242424;

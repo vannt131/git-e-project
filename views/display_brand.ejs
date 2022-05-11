@@ -11,10 +11,10 @@
 <%- include("header.ejs") %>
 <section class="section">
     <div class="breadcrumb">
-        <h3><%= title_products %></h3>
+        <h3><%= data_brand_products[0].BrandName %></h3>
         <ul class="menu-item">
             <li><a href="/">Home</a></li>
-            <li><a href=""><%= title_products %></a></li>
+            <li><%= data_brand_products[0].BrandName %></li>
         </ul>
     </div>
     <div class="product-wrp">
@@ -29,45 +29,48 @@
             </div>
             <div class="sort-by-row col-md-6">
                 <h4>Sort by:</h4>
-                <select name="sort" id="select-sort">
-                    <option value="">Name, A to Z</option>
-                    <option value="">Name, Z to A</option>
-                    <option value="">Price, low to high</option>
-                    <option value="">Price, high to low</option>
-                </select>
+                <form action="">
+                    <select name="sort" id="select-sort" onchange="javascript:handleSelect(this)">
+                        <option value="">Select</option>
+                        <option value="">Name, A to Z</option>
+                        <option value="">Name, Z to A</option>
+                        <option value="">Price, low to high</option>
+                        <option value="">Price, high to low</option>
+                    </select>
+                </form>
             </div>
         </div>
         <div class="product-results">
             <div class="grid-products grid-list-active">
-                <% for (var i=0; i<display_products.length; i++){ %>
+                <% for (var i=0; i<data_brand_products.length; i++){ %>
                     <div class="col-md-3">
-                        <a href="/products/detail-product"><img src="<%= display_products[i].ProductImage %>" alt=""></a>
-                        <div class="star" style="color: #ff7f50" >
-                            <h3><%= display_products[i].Value %>/10</h3>
+                        <a href="/products/detail-product?id=<%= data_brand_products[i].ID %>"><img src="<%= data_brand_products[i].ProductImage %>" alt=""></a>
+                        <div class="evalue" style="color: #ff7f50" >
+                            <h3><%= data_brand_products[i].Value %>/10</h3>
                         </div>
-                        <h4><a href="/products/detail-product" class="product-name"><%= display_products[i].ProductName %></a></h4>
-                        <h3><span style="text-decoration: line-through;opacity: 0.8;margin-right: 10px"><%= display_products[i].Price %>$</span><span style="color: #ed0f0f"><%= display_products[i].PriceSale %>$</span></h3>
+                        <h4><a href="/products/detail-product?id=<%= data_brand_products[i].ID %>" class="product-name"><%= data_brand_products[i].ProductName %></a></h4>
+                        <h3><span style="text-decoration: line-through;opacity: 0.8;margin-right: 10px"><%= data_brand_products[i].Price %>$</span><span style="color: #ed0f0f"><%= data_brand_products[i].PriceSale %>$</span></h3>
                         <div class="outer">
-                            <a href=""><i class="fa fa-heart"></i></a>
-                            <a href=""><i class="fa fa-eye"></i></a>
-                            <a href=""><i class="fa fa-shopping-bag"></i></a>
+                            <a href="/wishlish"><i class="fa fa-heart"></i></a>
+                            <a href="/products/detail-product?id=<%= data_brand_products[i].ID %>"><i class="fa fa-eye"></i></a>
+                            <a href="/shopping-cart"><i class="fa fa-shopping-bag"></i></a>
                         </div>
                     </div>
                 <% } %>
             </div>
             <div class="list-products">
-                <% for (var i=0; i<display_products.length; i++){ %>
+                <% for (var i=0; i<data_brand_products.length; i++){ %>
                     <div class="list-product-item">
                         <div class="product-img col-md-3">
-                            <a href="/products/detail-product"><img src="<%= display_products[i].ProductImage %>" alt=""></a>
+                            <a href="/products/detail-product?id=<%= data_brand_products[i].ID %>"><img src="<%= data_brand_products[i].ProductImage %>" alt=""></a>
                         </div>
                         <div class="product-infor col-md-9">
                             <div class="star" style="color: #ff7f50" >
-                                <h3><%= display_products[i].Value %>/10</h3>
+                                <h3><%= data_brand_products[i].Value %>/10</h3>
                             </div>
-                            <h4><a href="/products/detail-product" class="product-name"><%= display_products[i].ProductName %></a></h4>
-                            <h3><span style="text-decoration: line-through;opacity: 0.8;margin-right: 10px"><%= display_products[i].Price %>$</span><span style="color: #ed0f0f"><%= display_products[i].PriceSale %>$</span></h3>
-                            <div><%= display_products[i].Property %></div>
+                            <h4><a href="/products/detail-product?id=<%= data_brand_products[i].ID %>" class="product-name"><%= data_brand_products[i].ProductName %></a></h4>
+                            <h3><span style="text-decoration: line-through;opacity: 0.8;margin-right: 10px"><%= data_brand_products[i].Price %>$</span><span style="color: #ed0f0f"><%= data_brand_products[i].PriceSale %>$</span></h3>
+                            <div><%= data_brand_products[i].Property %></div>
                             <div>
                                 <div class="buy-now">
                                     <h4><a href="/check-out">BUY NOW</a></h4>
@@ -78,7 +81,7 @@
                             </div>
                             <div>
                                 <div class="add-wishlish">
-                                    <a href=""><i class="fa fa-heart"></i>
+                                    <a href="/wishlish"><i class="fa fa-heart"></i>
                                         Add to wishlish</a>
                                 </div>
                                 <div class="share">
@@ -96,6 +99,6 @@
 <%- include("footer.ejs") %>
 <script type="text/javascript" src="/js/jquery.js"></script>
 <script type="text/javascript" src="/js/js_all.js"></script>
-<script type="text/javascript" src="/js/search_results.js"></script>
+<script type="text/javascript" src="/js/display_products.js"></script>
 </body>
 </html>

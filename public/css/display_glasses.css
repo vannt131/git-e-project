@@ -129,16 +129,14 @@ ul li{
 .grid-products .col-md-3:hover{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
+.grid-products .col-md-3:hover .product-name a{
+    color: #ed0f0f;
+}
 .grid-products h4{
     height: 50px;
 }
 .grid-products a{
     color: #242424;
-}
-.grid-products a:hover{
-    color: #ed0f0f;
-    transition: all 200ms;
 }
 
 .grid-products .outer{

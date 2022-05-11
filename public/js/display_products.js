@@ -12,3 +12,8 @@ $(document).ready(function (){
         $('.list-products').addClass('grid-list-active');
     });
 });
+
+function handleSelect(elm)
+{
+    window.location = elm.value;
+}

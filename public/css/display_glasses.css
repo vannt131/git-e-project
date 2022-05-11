@@ -214,11 +214,11 @@ ul li{
 .add-cart a:hover{
     background: #242424;
 }
-.add-wishlish, .share{
+.add-wishlist, .share{
     display: inline-block;
     margin: 0 20px 20px 0;
 }
-.add-wishlish a:hover, .share a:hover{
+.add-wishlist a:hover, .share a:hover{
     color: #ed0f0f;
 }
 

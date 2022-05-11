@@ -51,9 +51,9 @@
                         <h4><a href="/products/detail-product?id=<%= data_brand_products[i].ID %>" class="product-name"><%= data_brand_products[i].ProductName %></a></h4>
                         <h3><span style="text-decoration: line-through;opacity: 0.8;margin-right: 10px"><%= data_brand_products[i].Price %>$</span><span style="color: #ed0f0f"><%= data_brand_products[i].PriceSale %>$</span></h3>
                         <div class="outer">
-                            <a href="/wishlish"><i class="fa fa-heart"></i></a>
-                            <a href="/products/detail-product?id=<%= data_brand_products[i].ID %>"><i class="fa fa-eye"></i></a>
-                            <a href="/shopping-cart"><i class="fa fa-shopping-bag"></i></a>
+                            <a href="/wishlist"><i class="fa fa-heart" title="Add to wishlist"></i></a>
+                            <a href="/products/detail-product?id=<%= data_brand_products[i].ID %>" title="Product information"><i class="fa fa-eye"></i></a>
+                            <a href="/shoppingcart"><i class="fa fa-shopping-bag" title="Add to cart"></i></a>
                         </div>
                     </div>
                 <% } %>
@@ -80,9 +80,9 @@
                                 </div>
                             </div>
                             <div>
-                                <div class="add-wishlish">
-                                    <a href="/wishlish"><i class="fa fa-heart"></i>
-                                        Add to wishlish</a>
+                                <div class="add-wishlist">
+                                    <a href="/wishlist"><i class="fa fa-heart"></i>
+                                        Add to wishlist</a>
                                 </div>
                                 <div class="share">
                                     <a href=""><i class="fa fa-share-alt"></i>

@@ -9,11 +9,11 @@ app.listen(port, function (){
 //tạo cấu hình và kết nối mysql
 const mysql = require("mysql");
 const conn = mysql.createConnection({
-    host: "db4free.net",
+    host: "localhost",
     port: "3306",
-    user: "eyeonic",
-    password: "eyeonic12345",
-    database: "data_eyeonic",
+    user: "root",
+    password: "",
+    database: "db_eproject_ki_1",
     multipleStatements: true
 });
 
